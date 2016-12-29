@@ -1514,3 +1514,22 @@ Modals
     box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.30);
 }
 
+/****
+*
+Checkout
+*/
+
+#checkout label {
+    margin-top: 15px;
+}
+#checkout h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#checkout form {
+    margin-bottom: 20px;
+}
+#checkout .btn-enviar {
+    width: 100%;
+    margin-top: 50px;
+}
