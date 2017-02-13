@@ -170,6 +170,27 @@
     <!--area util -->
     <div class="area-util">
 
+	    				 <!-- modal editar foto -->
+                                <div class="modal fade" id="editar-foto" tabindex="-1" role="dialog">
+                                  <div style="width: 250px !important;" class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Editar Foto</h4>
+                                        <button type="button" class="btn btn-enviar pull-right"><i class="fa fa-camera fa-lg" aria-hidden="true"></i>
+ Adicionar Foto</button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end modal editar foto-->
+
 
     <!-- modal editar foto -->
                                 <div class="modal fade" id="editar-foto" tabindex="-1" role="dialog">
@@ -183,7 +204,7 @@
                                       </div>
                                       <div class="modal-body">
                                         <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
-                                         </div>               
+                                         </div>
                                           <!-- .end row-->
                                           </div>
                                       </div>
@@ -204,7 +225,7 @@
 
                                         <div class="row">
                                           <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <img class="img-responsive" src="assets/images/thumb_visualizaperfil.png">  
+                                            <img class="img-responsive" src="assets/images/thumb_visualizaperfil.png">
                                           </div>
                                           <div class="col-lg-8 col-md-8 col-sm-8">
                                                 <div class="row">
@@ -326,7 +347,7 @@
                                                      <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                         <div class="box-fotos text-center">
                                                             <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
-                                                            
+
                                                              <ul class="list-unstyled">
                                                                 <li><h5>Comentário do membro x</h5>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
@@ -379,8 +400,8 @@
                                                         </div>
                                                     </div>
                                                     <!-- .end item -->
-                                                  
-                                               
+
+
                                                 </div>
                                                 <!-- .end row -->
                                                 </div>
@@ -390,7 +411,7 @@
                                           </div>
 
                                           <!-- .end Nav Tabs -->
-                                         </div>               
+                                         </div>
                                           <!-- .end row-->
                                           </div>
                                       </div>
@@ -407,19 +428,18 @@
             <div class="col-lg-3">
                 <div class="perfil">
                     <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
-                    <button class="btn editar-foto">Editar Foto</button>
+                    <a data-toggle="modal" data-target="#editar-foto" href="#"> <button class="btn editar-foto">Editar Foto</button> </a>
                     <hr>
                     <ul>
                         <li>30 visualizações de perfil</li>
                         <li><a data-toggle="modal" data-target="#minhas-fotos" href="#">Meus Albuns</a></li>
-                        <li><a href="#">Como meu perfil é visto</a></li>
                     </ul>
                 </div>
 
                 <div class="menu-lateral">
                     <ul>
                         <li><a href="mensagens.html">Mensagens</a></li>
-                        <li><a id="chat-open" href="#">Chat</a></li>
+                        <li><a id="chat-open-menu" href="#">Chat</a></li>
                     </ul>
                 </div>
             </div>
@@ -449,7 +469,7 @@
 
                         <!-- area recebidas-->
                         <div role="tabpanel" class="tab-pane fade in active" id="recebidas">
-                          
+
                           <!--form-->
                           <form class="form-inline">
                               <div class="form-group">
@@ -505,7 +525,7 @@
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
                                                         </a></li>
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>       
+                                                        </a></li>
                                                     </ul>
 
 
@@ -539,7 +559,7 @@
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
                                                         </a></li>
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>       
+                                                        </a></li>
                                                     </ul>
 
 
@@ -574,7 +594,7 @@
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
                                                         </a></li>
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>       
+                                                        </a></li>
                                                     </ul>
 
                                             <em class="text-right">há 30 minutos </em>
@@ -605,7 +625,7 @@
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
                                                         </a></li>
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>       
+                                                        </a></li>
                                                     </ul>
 
 
@@ -621,7 +641,7 @@
 
                         <!-- tab enviadas -->
                         <div role="tabpanel" class="tab-pane fade" id="enviadas">
-                    
+
                          <!--form-->
                           <form class="form-inline">
                               <div class="form-group">
@@ -677,7 +697,7 @@
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
                                                         </a></li>
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>       
+                                                        </a></li>
                                                     </ul>
 
 
@@ -709,7 +729,7 @@
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
                                                         </a></li>
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>       
+                                                        </a></li>
                                                     </ul>
 
 
@@ -741,7 +761,7 @@
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
                                                         </a></li>
                                                         <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>       
+                                                        </a></li>
                                                     </ul>
 
                                             <em class="text-right">há 30 minutos </em>
@@ -762,9 +782,9 @@
                 </div>
             </div>
             <!-- .end content dir-->
-        </div>        
+        </div>
      </div>
-     <!-- .end area util -->      
+     <!-- .end area util -->
  </div>
 
 

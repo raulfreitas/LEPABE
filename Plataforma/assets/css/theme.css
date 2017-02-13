@@ -32,7 +32,7 @@ Seções:
 *********************************************************************
 *********************************************************************
 *********************************************************************/
-    
+
     @import url("../fonts/font-awesome/css/font-awesome.css");
     @import url("../css/animate.css");
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,700italic,700,500italic,400italic,900,500,300italic,300,100italic,100);
@@ -51,18 +51,18 @@ Geral
         font-weight: 300;
         margin-left: 10px;
     }
-    
+
     body {
         border-top: 4px solid #9b1143;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     p {
         font-size: 16px;
         font-weight: 300;
         opacity: .80;
     }
-    
+
      input, textarea, select {
         background: #f8f8f8 !important;
         font-size: 10px;
@@ -78,21 +78,21 @@ Geral
 *
 Header
 */
-    
 
-    
+
+
     header {
         padding: 20px;
     }
 
-    
+
     header li {
         list-style: none;
         display: inline-block;
         font-size: 17px;
     }
 
-    
+
     header .button-aumente {
         background: #e93c82;
         border-radius: 5px;
@@ -102,20 +102,20 @@ Header
         font-weight: 300;
         margin-left: 10px;
     }
-    
+
     header .button-aumente i {
         padding-right: 10px;
         font-size: 17px;
     }
-    
+
     .notifica a:hover {
         color: darkgray;
     }
-    
+
     .notifica a {
         color: black;
     }
-    
+
     .notifica i:after {
         content: "5";
         background: red;
@@ -129,7 +129,7 @@ Header
         left: -5px;
         color: white !important;
     }
-    
+
     .notifica .dropdown-menu {
         background: #f5f5f5;
         border: 1px #888888 solid;
@@ -137,7 +137,7 @@ Header
         left: -70px;
         padding: 5px;
     }
-    
+
     .notifica .dropdown-menu:after {
         content: "\f0d8";
         font: normal normal normal 17px/1 FontAwesome;
@@ -149,17 +149,17 @@ Header
         left: 80px;
         font-size: 20px;
     }
-    
+
     .notifica .dropdown-menu li {
         display: list-item;
         border-bottom: 1px solid #dcdcdc;
     }
-    
+
     .notifica .dropdown-menu li a:hover {
         background: #6b6b6b;
         color: white !important;
     }
-    
+
     .notifica .dropdown-menu li a {
         font-weight: 300;
         font-size: 12px;
@@ -167,37 +167,37 @@ Header
         padding-bottom: 20px;
         color: #555555;
     }
-    
+
     .notifica .dropdown-menu li span {
         top: 10px;
         position: relative;
         font-style: italic;
     }
-    
+
     .fn-direito li a {
         font-size: 11px;
         color: black;
         font-weight: 700;
         padding-right: 20px;
     }
-    
+
     .fn-direito i {
         padding-right: 10px;
     }
-    
+
     .fn-direito {
         padding: 3px;
     }
-    
+
     .fn-direito li {
         margin-right: 20px;
         border-right: 1px solid rgba(0, 0, 0, 0.15);
     }
-    
+
     .fn-direito li:last-child {
         border: none;
     }
-    
+
     .fn-direito .fa-heart:after {
         content: "11";
         background: red;
@@ -211,14 +211,14 @@ Header
         left: -5px;
         color: white !important;
     }
-    
+
     .fn-direito .glyphicon-comment {
         font-size: 25px;
         color: #d00054;
         position: relative;
         top: 8px;
     }
-    
+
     .fn-direito .dropdown-menu {
         background: #f5f5f5;
         border: 1px #888888 solid;
@@ -227,19 +227,20 @@ Header
         padding: 5px;
         right: 0;
         margin-top: 22px;
+        z-index: 99999999;
     }
-    
+
     .fn-direito .dropdown-menu li {
         display: list-item;
         border-bottom: 1px solid #dcdcdc;
         border-right: 0;
         margin-right: 0;
     }
-    
+
     .fn-direito .dropdown-menu li a {
         font-weight: 300;
     }
-    
+
     .fn-direito .dropdown-menu li a:hover {
         background: #6b6b6b;
         color: white !important;
@@ -252,7 +253,7 @@ Header
             margin-right: auto;
             margin-left: auto;
             margin-top:20px;
-            margin-bottom: 
+            margin-bottom:
         }
         .ajuste-xs-1 {
             text-align: center;
@@ -301,32 +302,32 @@ Header
 *
 chat
 */
-    
+
     #chat .col-lg-2 {
         border-top: 6px #d00054 solid !important;
         background: #f1f1f1;
         border: 1px solid #afafaf;
+        z-index: 99999;
     }
-    
+
     #chat {
         display: none;
-        z-index: 9999;
         position: absolute;
         width: 100%;
     }
-    
+
     #chat .configura-chat {
         background: #3a3a3a;
         padding: 10px;
         color: white;
         font-weight: 300;
     }
-    
+
     #chat .configura-chat a {
         color: white;
         font-size: 11px;
     }
-    
+
     .configura-chat.dropdown-menu {
         background: #f5f5f5;
         border: 1px #888888 solid;
@@ -336,23 +337,23 @@ chat
         right: 0;
         margin-top: 22px;
     }
-    
+
     .configura-chat .dropdown-menu li {
         display: list-item;
         border-bottom: 1px solid #dcdcdc;
         border-right: 0;
         margin-right: 0;
     }
-    
+
     .configura-chat .dropdown-menu li a {
         font-weight: 300;
     }
-    
+
     .configura-chat .dropdown-menu li a:hover {
         background: #6b6b6b;
         color: white !important;
     }
-    
+
     .configura-chat .popover {
         background: #3a3a3a !important;
         left: -60px !important;
@@ -360,58 +361,60 @@ chat
         font-size: 11px;
         border-radius: 0;
     }
-    
+
     .configura-chat .popover li {
         list-style: none;
     }
-    
+
     .configura-chat a {
         padding-right: 10px;
     }
-    
+
     .perfis-chat {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
+
     .perfis-chat li {
         font-size: 12px;
         font-weight: 300;
         list-style: none;
     }
-    
+
     .perfis-chat .col-lg-12 {
         margin-bottom: 20px;
+        z-index: 999999
     }
-    
+
     .chat-design h3 {
         color: white;
         font-weight: 400;
         margin-top: 0;
     }
-    
+
     .chat-design p {
         font-size: 11px;
         font-weight: 300;
         color: white;
         margin-top: 20px;
     }
-    
+
     .chat-design li {
         list-style: none;
     }
-    
+
     #perfil-chat-content {
         left: 655px;
         margin-top: 65px;
+        z-index: 99999;
     }
-    
+
     .chat-design {
         background: #7d7d7d;
         padding: 10px;
         color: white;
     }
-    
+
     .chat-design .btn {
         background: white;
         color: black;
@@ -423,12 +426,12 @@ chat
 *
 Content
 */
-    
+
     #content {
         background-image: url("../images/bg_content.png");
         border-top: 1px solid rgba(0, 0, 0, 0.07);
     }
-    
+
     .area-util {
         background: white;
         border: 1px solid #e6e6e6;
@@ -441,7 +444,7 @@ Content
 *
 Perfil Cadastro
 */
-    
+
     .timeline {
         margin: 20px 0;
         margin-bottom: 90px;
@@ -450,14 +453,14 @@ Perfil Cadastro
         border-top: 5px solid #acacac;
         list-style: none;
     }
-    
+
     .timeline_step {
         float: left;
         width: 25%;
         padding-top: 30px;
         position: relative;
     }
-    
+
     .timeline_step:first-of-type:before,
     .timeline_step:last-of-type:before {
         content: "";
@@ -468,11 +471,11 @@ Perfil Cadastro
         top: -2px;
         left: 0;
     }
-    
+
     .timeline_step:last-of-type:before {
         left: 50%;
     }
-    
+
     .timeline_step:hover .timeline_step-label {
         opacity: 1;
         -webkit-transform: rotate(0deg);
@@ -482,12 +485,12 @@ Perfil Cadastro
         border-width: 1px;
         bottom: 100%;
     }
-    
+
     .timeline_step:hover .timeline_step-label:before,
     .timeline_step:hover .timeline_step-label:after {
         display: block;
     }
-    
+
     .timeline_step-label {
         opacity: 0;
         height: 0;
@@ -506,7 +509,7 @@ Perfil Cadastro
         bottom: 0;
         transition: bottom 0.1s ease-in-out, opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
     }
-    
+
     .timeline_step-label:before,
     .timeline_step-label:after {
         display: none;
@@ -518,19 +521,19 @@ Perfil Cadastro
         top: 100%;
         left: 50%;
     }
-    
+
     .timeline_step-label:before {
         border-top-color: #428bca;
         border-width: 8px;
         margin-left: -8px;
     }
-    
+
     .timeline_step-label:after {
         border-top-color: #fff;
         border-width: 6px;
         margin-left: -6px;
     }
-    
+
     .timeline_step-content {
         display: block;
         overflow: hidden;
@@ -538,7 +541,7 @@ Perfil Cadastro
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    
+
     .timeline_step-title {
         display: block;
         width: 100%;
@@ -548,7 +551,7 @@ Perfil Cadastro
         position: absolute;
         top: 0;
     }
-    
+
     .timeline_step-marker {
         width: 50px;
         height: 50px;
@@ -565,12 +568,12 @@ Perfil Cadastro
         top: -26px;
         left: 50%;
     }
-    
+
     .done .timeline_step-marker {
         background: #e93c82;
         color: #fff;
     }
-    
+
     .timeline_step-radio {
         display: none;
         /**
@@ -578,22 +581,22 @@ Perfil Cadastro
    * because markers won't be clicked in horz version
    */
     }
-    
+
     .timeline-summary {
         width: 200px;
         border-width: 2px;
     }
-    
+
     .timeline-summary .timeline_step-label {
         margin-bottom: 19px;
     }
-    
+
     .timeline-summary .timeline_step-title {
         padding: 10px 0 0;
         font-size: 8px;
         font-weight: bold;
     }
-    
+
     .timeline-summary .timeline_step-marker {
         width: 12px;
         height: 12px;
@@ -603,7 +606,7 @@ Perfil Cadastro
         box-shadow: 0 0 0 3px #fff;
         top: -7px;
     }
-    
+
     .progress {
         height: 40px;
         margin-bottom: 40px;
@@ -670,62 +673,62 @@ Perfil Cadastro
 *
 Footer
 */
-    
+
     #footer {
         background-color: #230729;
         padding: 30px;
     }
-    
+
     #footer h4 {
         font-size: 15px;
         font-weight: 400;
     }
-    
+
     #footer li {
         list-style: none;
         border-bottom: 1px solid #39203f;
         padding: 10px 0px 10px 0px;
         display: inline-block;
     }
-    
+
     #footer li a {
         color: white;
     }
-    
+
     #footer ul {
         padding-left: 0;
     }
-    
+
     #footer h4 {
         color: #cccccc;
     }
-    
+
     #footer ul {
         color: #cccccc;
         font-weight: 300;
         font-size: 12px;
     }
-    
+
     .fi-black {
         color: black;
     }
-    
+
     #footer .social {
         padding-top: 0;
     }
-    
+
     #footer .social li {
         border: none;
     }
-    
+
     #footer .social li a:hover {
         color: #d00054;
     }
-    
+
     #footer li:last-child {
         border: none;
     }
-    
+
     @media (max-width: 414px) {
         .logo-footer {
             display: block;
@@ -986,7 +989,6 @@ Mensagens
     margin-bottom: 10px;
 }
 #mensagens label {
-    margin-right: 10px;
     font-size: 14px;
     font-weight: 300;
 }

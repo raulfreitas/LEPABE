@@ -10,12 +10,16 @@ $(document).ready(function () {
 
     $("#chat").hide();
     $("#chat-open").show();
+    $("#chat-open-menu").show();
 
     $('#chat-open').click(function () {
         $("#chat").slideToggle("slide");
     });
 
-    // perfil chat 
+	$('#chat-open-menu').click(function () {
+        $("#chat").slideToggle("slide");
+    });
+    // perfil chat
 
 
     $("#perfil-chat-content").hide();
@@ -47,7 +51,7 @@ $(function () {
 });
 
 
-//ToolTip 
+//ToolTip
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
