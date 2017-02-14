@@ -19,7 +19,7 @@
     * Retirada do Botão de Facebook
     * Mudança dos Nomes de Etapas, que estavam como STEP1, STEP2, STEP3, STEP4 em todas páginas de CADASTRO E INTERESSE.
 
-13/02/2017 - v 4.1
+13/02/2017 - v 4.2
 
     MUDANÇAS Plataforma
     
@@ -32,3 +32,9 @@
     - perfil-membro.html | inclusão lightbox comentários do album de fotos.
     - footer | Correção dos itens desalinhados
     - theme.css | Correção de pequenos desalinhados.
+
+13/02/2017 - v 4.1
+       
+     MUDANÇAS Institucional
+     
+     - Inclusão dos campos do fale conosco.
