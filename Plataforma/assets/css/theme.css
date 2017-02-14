@@ -688,7 +688,6 @@ Footer
         list-style: none;
         border-bottom: 1px solid #39203f;
         padding: 10px 0px 10px 0px;
-        display: inline-block;
     }
 
     #footer li a {
@@ -719,6 +718,7 @@ Footer
 
     #footer .social li {
         border: none;
+        display: inline-block;
     }
 
     #footer .social li a:hover {
