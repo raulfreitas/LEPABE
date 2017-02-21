@@ -38,3 +38,11 @@
      MUDANÇAS Institucional
      
      - Inclusão dos campos do fale conosco.
+     
+ 20/02/2017 - v 4.3
+ 
+    MUDANÇAS PLATAFORMA:
+    
+    - Alteração de texto na parte do perfil-de-membro.html
+ 
+ 
