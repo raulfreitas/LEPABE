@@ -45,7 +45,7 @@
     
     - Alteração de texto na parte do perfil-de-membro.html
  
- 20/02/2017 - v 4.4
+ 13/03/2017 - v 4.4
  
     MUDANÇAS PLATAFORMA
     
