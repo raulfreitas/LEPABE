@@ -59,7 +59,7 @@
             </li>
             <li class="hidden-sm">
                 <a href="planos.html" class="btn button-aumente"><i class="fa fa-fire fa-2x" aria-hidden="true"></i>
-                 AUMENTE SUAS CHANCES</a>
+                 ASSINE AGORA</a>
              </li>
          </div>
          <!-- .end notifica -->
@@ -392,19 +392,109 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 
 
   <div class="panel panel-default">
+
+
+
+	  							<!-- modal Historico Pagamentos -->
+                                <div class="modal fade" id="historico-pagamento" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Histórico Pagamento</h4>
+                                      </div>
+                                      <div class="modal-body">
+									  	 <li><span class="pull-left">20/01/2015</span> <span class="pull-right">Pago</span></li>				  	 <li><span class="pull-left">20/01/2016</span> <span class="pull-right">Pago</span></li>				  	 <li><span class="pull-left">20/01/2017</span> <span class="pull-right">Pago</span></li>
+
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end Historico Pagamentos-->
+
+
+
+                              <!-- modal Dados Pagamento -->
+                                <div class="modal fade" id="dados-pagamento" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Dados Pagamento</h4>
+                                      </div>
+                                      <div class="modal-body">
+									 	 <div class="row">
+	                                       	<div class="col-lg-12 ">
+
+									  		 <form>
+
+									              <div class="form-group">
+									                <div class="col-lg-6">
+									                    <label>Numero do Cartão</label>
+									                    <input type="text" class="form-control" placeholder="4032 3021 2013 9000">
+									                </div>
+									              </div>
+									               <div class="form-group">
+									                <div class="col-lg-6">
+									                    <label>Nome no cartão</label>
+									                    <input type="text" class="form-control" placeholder="João da Silva">
+									                </div>
+									              </div>
+									               <div class="form-group">
+									                <div class="col-lg-6">
+									                    <label>Cod Segurança</label>
+									                    <input type="text" class="form-control"  placeholder="Exemplo: 567">
+									                </div>
+									              </div>
+									               <div class="form-group">
+									                <div class="col-lg-6">
+									                    <label>Validade</label>
+									                    <input type="text" class="form-control"  placeholder="Exemplo: 02/23">
+									                </div>
+									              </div>
+
+									              <div class="form-group">
+									                <div class="col-lg-12">
+									                    									                </div>
+									              </div>
+
+									            </form>
+	                                       </div>
+									 	 </div>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end Dados Pagamento-->
+
+
+
+
+
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          MINHA ASSINATURA
+          MINHA ASSINATURA E PAGAMENTOS
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-      <li><b class="pull-left">Plano</b> <span class="pull-right">Plano3</span></li>
-      <li><b class="pull-left">Valido até</b> <span class="pull-right">31/09/2016</span></li>
-        <hr>
-        <button type="submit" class="btn btn-confirmar">CONFIRMAR</button>
+      <li><b class="pull-left">Plano</b> <span class="pull-right">Plano3  | <a href="planos.html"><i>Editar</i></a> </span></li>
+      <li><b class="pull-left">Valido até</b> <span class="pull-right">31/09/2016 </span></li>
+
+      <li><b class="pull-left">Histórico de Compras</b> <span class="pull-right"><a data-toggle="modal" data-target="#historico-pagamento" href="">Ver</a></span></li>
+      <li><b class="pull-left">Dados Cartão</b> <span class="pull-right">XXXX-XXXX-XXXX-61914 |  <a href="#" data-toggle="modal" data-target="#dados-pagamento"><i>Editar</i></a> </span></li>
+
+
         </div>
     </div>
   </div>
@@ -415,6 +505,41 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 
 
  <div class="panel panel-default">
+
+
+  								<!-- modal editar Notificações -->
+                                <div class="modal fade" id="editar-notifica" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Editar Notificações</h4>
+                                      </div>
+                                      <div class="modal-body">
+									  			<h4>Notificações de Usuários Interessados</h4>
+									  			<li><span class="pull-left"> Gostar do Perfil – Me notifique quando um usuário estiver interessado e gostar do meu perfil </span> <span class="pull-right"><label><input type="checkbox" value=""  checked >Ativado</label></span></li>
+									  			<li><span class="pull-left"> Interesse – Me notifique quando um usuário mostrar interesse em mim a partir dos seus Pretendentes Diários. </span> <span class="pull-right"><label><input type="checkbox" value="">Desativado</label></span></li>
+									  			<hr>
+									  			<h4>Dicas, Eventos & Ofertas </h4>
+
+									  			<li><span class="pull-left"> Gostar do Perfil – Me notifique quando um usuário estiver interessado e gostar do meu perfil </span> <span class="pull-right"><label><input type="checkbox" value=""  checked>Ativado</label></span></li>
+									  			<li><span class="pull-left"> Interesse – Me notifique quando um usuário mostrar interesse em mim a partir dos seus Pretendentes Diários. </span> <span class="pull-right"><label><input type="checkbox" value="">Desativado</label></span></li>
+
+									  			<hr>
+									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end modal editar Notificações-->
+
+
+
+
     <div class="panel-heading" role="tab" id="heading3">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
@@ -426,23 +551,15 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
       <div class="panel-body">
 
         <div class="col-lg-12 text-center">
-            <div class="checkbox">
-             <label>
-            <input type="checkbox" value="">
-            Notificação via e-mail
-             </label>
-            </div>
-            <div class="checkbox">
-             <label>
-            <input type="checkbox" value="">
-            Mensagem de Texto
-             </label>
-            </div>
-            <hr>
+          <li><b class="pull-left">E-mail</b> <span class="pull-right"><a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
+		  <li><b class="pull-left">Mensagens de texto</b> <span class="pull-right"><a <a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a> </span></li>
+		  <li><b class="pull-left">Notificações do iPhone/iPad </b> <span class="pull-right"><a <a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
+		  <li><b class="pull-left">Notificações do Android </b> <span class="pull-right"><a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
+		  <li><b class="pull-left">Notificações do Chat  </b> <span class="pull-right"><a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
+          <hr>
        </div>
 
 
-        <button type="submit" class="btn btn-confirmar">CONFIRMAR</button>
         </div>
     </div>
   </div>
@@ -451,6 +568,68 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 
 
    <div class="panel panel-default">
+
+
+	      					<!-- modal login -->
+                                <div class="modal fade" id="filtro-online" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Bloquear Usuário</h4>
+                                      </div>
+                                      <div class="modal-body">
+									  			<form>
+										  			<div class="form-group">
+											  			<select class="form-control">
+												  			<option>Apelido 1</option>
+												  			<option>Apelido 2</option>
+											  			</select>
+											  		</div>
+									  			</form>
+
+									  			<hr>
+									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end login-->
+                              <!-- modal login -->
+                                <div class="modal fade" id="ativa-funcao" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Ativar ou Desativar</h4>
+                                      </div>
+                                      <div class="modal-body">
+									  			<form>
+										  			<div class="form-group">
+											  			<select class="form-control">
+												  			<option>Ativar</option>
+												  			<option>Desativar</option>
+											  			</select>
+											  		</div>
+									  			</form>
+
+									  			<hr>
+									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end login-->
+
+
     <div class="panel-heading" role="tab" id="heading4">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
@@ -462,13 +641,9 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
       <div class="panel-body">
 
         <div class="col-lg-12 text-center">
-            <div class="checkbox">
-             <label>
-            <input type="checkbox" value="">
-            Chat Ativado
-             </label>
-            </div>
-            <hr>
+          <li><b class="pull-left">Bloquear Usuário no Chat</b> <span class="pull-right"><a data-toggle="modal" data-target="#filtro-online" href="#"><i>Editar</i></a></span></li>
+           <li><b class="pull-left">Chat Ativado</b> <span class="pull-right">Ativado | <a data-toggle="modal" data-target="#ativa-funcao" href="#"><i>Editar</i></a></span></li>
+          <hr>
        </div>
 
 
@@ -483,18 +658,188 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
     <div class="panel-heading" role="tab" id="heading5">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-          REFINAR BUSCA
+          BUSCA
         </a>
       </h4>
     </div>
     <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
       <div class="panel-body">
-	  		<p>Lorem</p>
+	  		<p>Há a possibilidade de colocarmos para a pessoa deixar busca pré definidas salvas, e na hora que ela for buscar ela seleciona esse perfil que ela criou aqui?</p>
         <hr>
         <button type="submit" class="btn btn-confirmar">CONFIRMAR</button>
         </div>
     </div>
   </div>
+
+
+
+  <div class="panel panel-default">
+
+
+
+	  						<!-- modal Localização -->
+                                <div class="modal fade" id="minha-localizacao" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Minha Localização</h4>
+                                      </div>
+                                      <div class="modal-body">
+									  			<form>
+										  			<div class="form-group">
+											  			<input type="text" class="form-control" placeholder="Insira sua localização">
+										  			</div>
+									  			</form>
+
+									  			<hr>
+									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end modalLocalização-->
+
+                              	<!-- modal login -->
+                                <div class="modal fade" id="info-login" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Alterar Informações de login</h4>
+                                      </div>
+                                      <div class="modal-body">
+									  			<form>
+										  			<div class="form-group">
+											  			<input type="text" class="form-control" placeholder="Novo apelido">
+										  			</div>
+									  			</form>
+
+									  			<hr>
+									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end login-->
+                               	<!-- modal login -->
+                                <div class="modal fade" id="info-idioma" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Alterar Idioma</h4>
+                                      </div>
+                                      <div class="modal-body">
+									  			<form>
+										  			<div class="form-group">
+											  			<select class="form-control">
+												  			<option>Português</option>
+												  			<option>Inglês</option>
+											  			</select>
+											  		</div>
+									  			</form>
+
+									  			<hr>
+									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end login-->
+
+
+
+
+    <div class="panel-heading" role="tab" id="heading6">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+          CONTA
+        </a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+      <div class="panel-body">
+
+	  		<div class="col-lg-12 text-center">
+	          <li><b class="pull-left">Idioma</b> <span class="pull-right">Português | <a data-toggle="modal" data-target="#info-idioma" href="#"><i>Editar</i></a></span></li>
+			  <li><b class="pull-left">Informações de login </b> <span class="pull-right"><a data-toggle="modal" data-target="#info-login" href="#"><i>Editar</i></a> </span></li>
+			  <li><b class="pull-left">Minhas Fotos </b> <span class="pull-right"> <a data-toggle="modal" data-target="#editar-foto" href="#"><i>Editar</i></a></span></li>
+			  <li><b class="pull-left">Perfil de interesse</b> <span class="pull-right"><a href="perfil-interesse-1.html"><i>Editar</i></a></span></li>
+			  <li><b class="pull-left">Minha Localização  </b> <span class="pull-right"><a <a data-toggle="modal" data-target="#minha-localizacao" href="#"><i>Editar</i></a></span></li>
+			  <li><b class="pull-left">Meu Perfil </b> <span class="pull-right"><a href="editar-perfil.html"><i>Editar</i></a></span></li>
+          <hr>
+       </div>
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading7">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+          FAQ
+        </a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+
+      <div class="panel-body" id="faq">
+
+
+                  <!--tabs-->
+
+                    <!-- Nav tabs -->
+                    <div class="col-lg-6">
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#1"  role="tab" data-toggle="tab">1</a></li>
+                        <li role="presentation"><a href="#2" role="tab" data-toggle="tab">2</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-6">
+
+
+                    <!-- Tab panes -->
+                      <div class="tab-content">
+
+                      <!--item tab-->
+                        <div role="tabpanel" class="tab-pane active" id="1">
+							Seção 1
+                        </div>
+                        <!--item .end tab-->
+                        <!-- item tab-->
+                        <div role="tabpanel" class="tab-pane" id="2">
+                          Seção 2
+                        </div>
+                        <!-- item .end tab-->
+                      </div>
+                    </div>
+                  <!--tabs .end-->
+
+
+        </div>
+    </div>
+  </div>
+
 
 
 
