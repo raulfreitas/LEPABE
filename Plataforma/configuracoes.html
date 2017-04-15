@@ -447,39 +447,43 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 									 	 <div class="row">
 	                                       	<div class="col-lg-12 ">
 
-									  		 <form>
+									  		<form id="atualiza-cartao-form" role="form" data-toggle="validator" >
 
 									              <div class="form-group">
 									                <div class="col-lg-6">
 									                    <label>Numero do Cartão</label>
-									                    <input type="text" class="form-control" placeholder="4032 3021 2013 9000">
+									                    <input id="input_numero" type="text"  class="form-control" placeholder="4032 3021 2013 9000" required>
 									                </div>
 									              </div>
 									               <div class="form-group">
 									                <div class="col-lg-6">
 									                    <label>Nome no cartão</label>
-									                    <input type="text" class="form-control" placeholder="João da Silva">
+									                    <input id="input_nome" type="text" class="form-control" placeholder="João da Silva" required>
 									                </div>
 									              </div>
 									               <div class="form-group">
 									                <div class="col-lg-6">
 									                    <label>Cod Segurança</label>
-									                    <input type="text" class="form-control"  placeholder="Exemplo: 567">
+									                    <input id="input_cod" type="number" class="form-control"  placeholder="Exemplo: 567" required>
 									                </div>
 									              </div>
 									               <div class="form-group">
 									                <div class="col-lg-6">
 									                    <label>Validade</label>
-									                    <input type="text" class="form-control"  placeholder="Exemplo: 02/23">
+									                    <input id="input_validade" type="number" class="form-control"  placeholder="Exemplo: 02/23" required>
 									                </div>
 									              </div>
 
-									              <button id="atualiza" type="button" class="btn btn-enviar">Atualizar</button>
+									              <button id="atualizar-cartao" type="submit" class="btn btn-enviar">Atualizar</button>
 
-									  			<div class="alert alert-success" style="margin-top: 20px;" role="alert">Alteração realizada</div>
+												  <div class="alert alert-success" style="margin-top: 20px;" role="alert">Alteração realizada</div>
 
 
 									            </form>
+
+
+
+
 	                                       </div>
 									 	 </div>
 
@@ -756,19 +760,23 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                                         <h4 class="modal-title pull-left" id="myModalLabel">Alterar Informações de login</h4>
                                       </div>
                                       <div class="modal-body">
-									  			<form>
+									  			<form id="atualiza-login-form">
 										  			<div class="form-group">
-											  			<input id="input-alterar" type="text" class="form-control" placeholder="Novo apelido">
+											  			<input required id="input-alterar" type="text" class="form-control" placeholder="Novo apelido">
 										  			</div>
 										  			<div class="form-group">
-											  			<input id="input-alterar" type="password" class="form-control" placeholder="Alterar senha">
+											  			<input required id="input-alterar" type="password" class="form-control" placeholder="Alterar senha">
 										  			</div>
+										  			<button id="atualiza-login" type="submit" class="btn btn-enviar">Confirmar </button>
+
+										  			<div id="alerta-dev" class="alert alert-success" style="margin-top: 20px;" role="alert"></div>
+
+
+
 									  			</form>
 
 									  			<hr>
-									  			<button id="atualiza-login" type="button" class="btn btn-enviar">Confirmar </button>
 
-									  			<div class="alert alert-success" style="margin-top: 20px;" role="alert">Alteração realizada</div>
 
 
                                          </div>
@@ -950,6 +958,7 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
 <!-- Custom Scripts -->
 <script src="assets/js/wow.min.js"></script>

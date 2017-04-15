@@ -4,6 +4,28 @@ $('.dropdown-toggle').dropdown()
 // WOW js
 new WOW().init();
 
+// Validator
+$('#atualiza-cartao-form').validator();
+$('#atualiza-login-form').validator();
+
+
+
+$('#atualiza-login-form').validator().on('submit', function (e) {
+  if (e.isDefaultPrevented()) {
+     alert("Altere os dados");
+  } else {
+  	 alert("Dados Modificados");
+  }
+});
+
+
+$('#atualiza-cartao-form').validator().on('submit', function (e) {
+  if (e.isDefaultPrevented()) {
+     alert("Altere os dados");
+  } else {
+  	 alert("Dados Modificados");
+  }
+});
 
 // Acessa Chat
 
@@ -72,20 +94,12 @@ $("#atualiza").click(function(){
 	});
 });
 
-$("#atualiza-login").click(function(){
+$("#atualiza-cartao").click(function(){
 	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
     	$(".alert-success").slideUp(4000);
 	});
 });
-$("#input-alterar").keyup(function() {
 
-if($("#input-alterar").val()==''){
-$("#atualiza-login").attr("disabled", true);
-}else{
-$("#atualiza-login").attr("disabled", false);
-}
-
-});
 
 $("#denunciar-perfil").click(function(){
 	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
@@ -182,6 +196,11 @@ $("#nao-curtiu-perfil").click(function(){
 	$(this).css("color","red");
 	$("#curtiu-perfil").css("color","#383838");
 });
+
+
+
+
+
 
 
 
