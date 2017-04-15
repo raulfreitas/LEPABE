@@ -59,7 +59,7 @@
     - Menu lateral Geral | Correção de ortografia Albuns.
     - enviar-mensagens.html | Foi colocado várias frases prontas para envio.
     
-15/04/2017 - v 5.0 e V 5.1 e V 5.2
+15/04/2017 - v 5.0 | V 5.1 | V 5.2 | V 5.3
 
     MUDANÇAS GERAIS
     
@@ -94,3 +94,7 @@
     CHAT
     
     - Retirei tudo que não tinha nada a ver na parte de opções e só deixei um filtro.
+    
+    MEU-PERFIL.html
+    
+    - Retirado do campo Pais na busca rapida, que não fazia sentido.
