@@ -45,7 +45,7 @@
     
     - Alteração de texto na parte do perfil-de-membro.html
  
- 13/03/2017 - v 4.4
+13/03/2017 - v 4.4
  
     MUDANÇAS PLATAFORMA
     
@@ -59,6 +59,38 @@
     - Menu lateral Geral | Correção de ortografia Albuns.
     - enviar-mensagens.html | Foi colocado várias frases prontas para envio.
     
+15/04/2017 - v 5.0 e V 5.1 e V 5.2
+
+    MUDANÇAS GERAIS
+    
+    - Inclusão de alerts, modals para confirmação de piscadinha, favoritos, mensagem enviada, configuração atualizada e etc.
+    - Inclusão de vários links para o perfil para pessoa, clicando na foto dela.
+    - Menu lateral, com todos menus completos que vão entrar agora.
+    - Separação dos htmls de Piscadinhas, Favoritos, Curtidas, Viu perfil e etc, para fazer mais sentido na navegação.
+    - Exclusão temporario da parte de Presentes, não ficou definido nada ainda, e como estamos tendo que revisar os fluxos nós mesmos, neste momente fica em stand by a parte de Presentes, retirei a função onde contia.
+    
+    BUSCA.HTML
+    
+    - Inclusão de fotos no perfis que estavam sem fotos
+    - alinhamento da barra do menu de busca.
+    
+    PRETENDENTES-DO-DIA.html
+    
+    - Inclusão de Hover para curtir ou não curtir.
+    
+    CONFIGURAÇÕES.html
+    
+    - Funções redefinidas e remodeladas para fazer mais sentido no fluxo.
  
- 
- 
+    MENSAGENS.html
+    
+    - Inclusão de hover para mensagem não lida
+    - Opção para responder mensagem direto para o membro, separando um area somente para enviar mensagem para um membro aleatorio que esteja na lista de amizade.
+    
+    FAVORITOS.HTML
+    
+    - Achei nos briefins iniciais do projeto dela, a parte de favoritos, inclui esta tela também.
+    
+    CHAT
+    
+    - Retirei tudo que não tinha nada a ver na parte de opções e só deixei um filtro.
