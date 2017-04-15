@@ -72,6 +72,21 @@ $("#atualiza").click(function(){
 	});
 });
 
+$("#atualiza-login").click(function(){
+	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+$("#input-alterar").keyup(function() {
+
+if($("#input-alterar").val()==''){
+$("#atualiza-login").attr("disabled", true);
+}else{
+$("#atualiza-login").attr("disabled", false);
+}
+
+});
+
 $("#denunciar-perfil").click(function(){
 	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
     	$(".alert-success").slideUp(4000);
@@ -103,6 +118,9 @@ $(function(){
         }, 2000));
     });
 });
+
+
+
 
 // Notifica Block Configuração
 
