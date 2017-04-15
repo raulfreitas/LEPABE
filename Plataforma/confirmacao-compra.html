@@ -19,7 +19,7 @@
   </head>
 
   <body>
-   <!-- header -->
+ <!-- header -->
     <header>
         <div class="container">
             <div class="row">
@@ -27,7 +27,7 @@
 
                     <!-- logo -->
                     <div class="col-lg-2 col-sm-2 col-md-12">
-                        <a href="#">
+                        <a href="meu-perfil.html">
                             <img class="logo img-responsive" src="assets/images/logo.png">
                         </a>
                     </div>
@@ -65,14 +65,14 @@
          <!-- .end notifica -->
          <!-- functions direito -->
          <div class="col-lg-7 col-md-7 col-sm-9 fn-direito text-right">
-            <li><i class="fa fa-search fa-lg" aria-hidden="true"></i> <a href="busca.html">BUSCAR</a>
+            <!--<li><i class="fa fa-search fa-lg" aria-hidden="true"></i> <a href="busca.html">BUSCAR</a>
             </li>
             <li><i class="fa fa-heart fa-lg" aria-hidden="true"></i>
                 <a href="pretendentes-do-dia.html">PRETENDENTES</a>
             </li>
             <li class="hidden-xs"><i class="glyphicon glyphicon-comment" aria-hidden="true"></i>
                 <a id="chat-open" href="#">CHAT ONLINE</a>
-            </li>
+            </li>-->
             <li class="configuracoes"><a href="meu-perfil.html"><img src="assets/images/thumb_perfil.png"></a> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Alohaboy06 <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu" aria-labelledby="dLabel">
                     <!--item-->
@@ -102,27 +102,21 @@
 </div>
 </header>
 <!-- .end header -->
+
 <!-- content-->
 <section id="content">
-    <!-- chat -->
+   <!-- chat -->
     <section id="chat">
         <div class="col-lg-2 col-md-2 col-sm-2  pull-right ">
             <div class="row">
                 <!-- configura chat -->
                 <div class="configura-chat">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Opcões</a>
-                    <div id="options-chat-content" class="hidden">
-                        <li><a href="#">Item1</a>
-                        </li>
-                    </div>
-                        <!--
-                    <div id="options-chat-title" class="hidden">
-                        <b>Example popover #2</b> - title
-                    </div>
-                -->
-                <i class="fa fa-sliders" aria-hidden="true"></i>
-                <a href="#">Filtros</a>
+	                <i class="fa fa-sliders" aria-hidden="true"></i>
+                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Filtros</a>
+                <div id="options-chat-content" class="hidden">
+                    <li><a href="#">Somente Online</a>
+                    </li>
+                </div>
             </div>
             <!-- .end configura chat -->
             <div class="perfis-chat">
@@ -166,6 +160,7 @@
     <!--.end vendo perfil-->
 </section>
 <!-- .end chat -->
+
 <div class="container">
     <!--area util -->
     <div class="area-util">
@@ -283,68 +278,7 @@
 </div>
 </section>
 <!-- footer.end -->
-<!-- chat -->
-<section id="chat">
-    <div class="col-lg-2 col-md-2 col-sm-2  pull-right ">
-        <div class="row">
-            <!-- configura chat -->
-            <div class="configura-chat">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Opcões</a>
-                <div id="options-chat-content" class="hidden">
-                    <li><a href="#">Item1</a>
-                    </li>
-                </div>
-                    <!--
-                    <div id="options-chat-title" class="hidden">
-                        <b>Example popover #2</b> - title
-                    </div>
-                -->
-                <i class="fa fa-sliders" aria-hidden="true"></i>
-                <a href="#">Filtros</a>
-            </div>
-            <!-- .end configura chat -->
-            <div class="perfis-chat">
-                <!--item-->
-                <div class="col-lg-12">
-                    <div class="col-lg-5">
-                        <a id="perfil-chat" href="#"><img src="assets/images/thumb_chat.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7">
-                        <li>
-                            <h6>brunasolteira421</h6>
-                        </li>
-                        <li><span>24 | Sao Paulo</span>
-                        </li>
-                    </div>
-                </div>
-                <!--.end item -->
-            </div>
-        </div>
-    </div>
-    <!-- vendo perfil -->
-    <div id="perfil-chat-content" class="col-lg-4">
-        <div class="col-lg-12 chat-design">
-            <div class="col-lg-4"><img src="assets/images/thumb_chat.png">
-            </div>
-            <div class="col-lg-8">
-                <li>
-                    <h3>brunasolteira421</h3>
-                </li>
-                <li><span>24 | Sao Paulo</span>
-                </li>
-            </div>
-            <div class="col-lg-12">
-                <p>Descrição do perfil a decidir Exemplo: Físico, idade, filhos, etnia</p>
-                <hr>
-                <a href="#" class="btn">CONVERSAR AGORA</a>
-            </div>
-        </div>
-    </div>
-    <!--.end vendo perfil-->
-</section>
-<!-- .end chat -->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

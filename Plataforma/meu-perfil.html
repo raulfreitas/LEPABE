@@ -27,7 +27,7 @@
 
                     <!-- logo -->
                     <div class="col-lg-2 col-sm-2 col-md-12">
-                        <a href="#">
+                        <a href="meu-perfil.html">
                             <img class="logo img-responsive" src="assets/images/logo.png">
                         </a>
                     </div>
@@ -110,19 +110,12 @@
             <div class="row">
                 <!-- configura chat -->
                 <div class="configura-chat">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Opcões</a>
-                    <div id="options-chat-content" class="hidden">
-                        <li><a href="#">Item1</a>
-                        </li>
-                    </div>
-                        <!--
-                    <div id="options-chat-title" class="hidden">
-                        <b>Example popover #2</b> - title
-                    </div>
-                -->
-                <i class="fa fa-sliders" aria-hidden="true"></i>
-                <a href="#">Filtros</a>
+	                <i class="fa fa-sliders" aria-hidden="true"></i>
+                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Filtros</a>
+                <div id="options-chat-content" class="hidden">
+                    <li><a href="#">Somente Online</a>
+                    </li>
+                </div>
             </div>
             <!-- .end configura chat -->
             <div class="perfis-chat">
@@ -166,7 +159,9 @@
     <!--.end vendo perfil-->
 </section>
 <!-- .end chat -->
-<div class="container">
+
+
+    <div class="container">
     <!--area util -->
     <div class="area-util">
 
@@ -291,14 +286,22 @@
                                             <!-- tab enviadas -->
                                             <div role="tabpanel" class="tab-pane fade" id="fotos-secretas">
                                                    <div class="row">
-                                                    <!-- item -->
+                                                   <!-- item -->
                                                     <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                         <div class="box-fotos text-center">
                                                             <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                            <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
                                                             <hr>
-                                                            <a href="#" class="btn btn-white">Curtir</a>
-                                                            <a href="#" class="btn btn-white">Comentar</a>
+                                                            <a href="#" class="btn btn-white">Curtidas (4)</a>
                                                         </div>
                                                     </div>
                                                     <!-- .end item -->
@@ -326,7 +329,7 @@
         <!-- menu lateral -->
             <div class="col-lg-3">
                 <div class="perfil">
-                    <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
+                    <a href="meu-perfil.html"><img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail"></a>
                    <a data-toggle="modal" data-target="#editar-foto" href="#"> <button class="btn editar-foto">Editar Foto</button> </a>
                     <hr>
                     <ul>
@@ -339,7 +342,14 @@
                     <ul>
                         <li><a href="mensagens.html">Mensagens</a></li>
                         <li><a id="chat-open-menu" href="#">Chat</a></li>
-                        <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html">Favoritos</a></li>
+                        <li><a href="pretendentes-do-dia.html">Pretendentes do dia</a></li>
+                        <li><a href="busca.html">Busca</a></li>
+                        <li><a href="piscadinha.html">Piscadinhas</a></li>
+                        <li><a href="viu-perfil.html">Viu Perfil</a></li>
+                        <!--<li><a href="presentes.html">Presentes</a></li>-->
+                        <li><a href="curtidas.html">Curtidas</a></li>
+                       <li><a href="favoritos.html">Favoritos</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -393,7 +403,7 @@
                                 <li>Ensino Superior</li>
                             </ul>
                             <ul class="list-unstyled">
-                                <li><h3>Relegião</h3></li>
+                                <li><h3>Religião</h3></li>
                                 <li role="separator" class="divider"></li>
                                 <li>Ateu</li>
                             </ul>
@@ -503,7 +513,7 @@
                             <ul class="media-list">
                               <li class="media">
                                 <div class="media-left">
-                                  <a href="piscadinha-viuperfil-presentes-prediletos-curtidas">
+                                  <a href="perfil-membro.html">
                                     <img class="media-object" src="assets/images/thumb_meuperfil.png">
                                   </a>
                                 </div>
@@ -513,7 +523,7 @@
                               </li>
                               <li class="media">
                                 <div class="media-left">
-                                  <a href="piscadinha-viuperfil-presentes-prediletos-curtidas">
+                                  <a href="perfil-membro.html">
                                     <img class="media-object" src="assets/images/thumb_meuperfil.png">
                                   </a>
                                 </div>
@@ -692,68 +702,7 @@
 </div>
 </section>
 <!-- footer.end -->
-<!-- chat -->
-<section id="chat">
-    <div class="col-lg-2 col-md-2 col-sm-2  pull-right ">
-        <div class="row">
-            <!-- configura chat -->
-            <div class="configura-chat">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Opcões</a>
-                <div id="options-chat-content" class="hidden">
-                    <li><a href="#">Item1</a>
-                    </li>
-                </div>
-                    <!--
-                    <div id="options-chat-title" class="hidden">
-                        <b>Example popover #2</b> - title
-                    </div>
-                -->
-                <i class="fa fa-sliders" aria-hidden="true"></i>
-                <a href="#">Filtros</a>
-            </div>
-            <!-- .end configura chat -->
-            <div class="perfis-chat">
-                <!--item-->
-                <div class="col-lg-12">
-                    <div class="col-lg-5">
-                        <a id="perfil-chat" href="#"><img src="assets/images/thumb_chat.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7">
-                        <li>
-                            <h6>brunasolteira421</h6>
-                        </li>
-                        <li><span>24 | Sao Paulo</span>
-                        </li>
-                    </div>
-                </div>
-                <!--.end item -->
-            </div>
-        </div>
-    </div>
-    <!-- vendo perfil -->
-    <div id="perfil-chat-content" class="col-lg-4">
-        <div class="col-lg-12 chat-design">
-            <div class="col-lg-4"><img src="assets/images/thumb_chat.png">
-            </div>
-            <div class="col-lg-8">
-                <li>
-                    <h3>brunasolteira421</h3>
-                </li>
-                <li><span>24 | Sao Paulo</span>
-                </li>
-            </div>
-            <div class="col-lg-12">
-                <p>Descrição do perfil a decidir Exemplo: Físico, idade, filhos, etnia</p>
-                <hr>
-                <a href="#" class="btn">CONVERSAR AGORA</a>
-            </div>
-        </div>
-    </div>
-    <!--.end vendo perfil-->
-</section>
-<!-- .end chat -->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

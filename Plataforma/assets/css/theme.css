@@ -36,6 +36,19 @@ Seções:
     @import url("../fonts/font-awesome/css/font-awesome.css");
     @import url("../css/animate.css");
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,700italic,700,500italic,400italic,900,500,300italic,300,100italic,100);
+
+
+
+   /********
+****
+*
+Notifica
+*/
+.alert-success {
+	display: none;
+}
+
+
     /********
 ****
 *
@@ -356,7 +369,7 @@ chat
 
     .configura-chat .popover {
         background: #3a3a3a !important;
-        left: -60px !important;
+        left: -120px !important;
         font-weight: 300;
         font-size: 11px;
         border-radius: 0;
@@ -753,6 +766,11 @@ Planos
         margin-right: 0;
         margin-bottom: 30px;
     }
+@media(max-width:780px) {
+	.line-purple-title {
+		width: 100%;
+	}
+}
 
 .planos {
     background: #f6f6f6;
@@ -929,6 +947,17 @@ Editar Perfil
   justify-content: center;
   margin-top: 20px;
 }
+#form-block .btn-confirmar {
+    background: #9b395f;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    display: flex;
+    width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  }
 #accordion li {
     list-style: none;
     padding-bottom: 15px;
@@ -965,6 +994,13 @@ Envia Mensagem
 #envia-mensagem .btn-enviar i {
     margin-right: 10px;
 }
+.box-mensagens h3 a {
+	color: #9b1143;
+}
+.box-mensagens h3 a:hover {
+	color: black;
+	text-decoration: none;
+}
 
 
   /****
@@ -998,6 +1034,7 @@ Mensagens
 #mensagens .btn-enviar {
     margin-top: 0;
     margin-right: 10px;
+    margin-left: 10px;
 }
 #mensagens .form-inline {
     margin-top: 10px;
@@ -1026,13 +1063,20 @@ Mensagens
 }
 .item-mensagens {
     border-bottom: 1px solid #f1f1f1;
-    padding-bottom: 20px;
     margin-bottom: 20px;
+    padding: 20px;
+}
+.box-mensagens .active {
+	background: #e9e9e9;
 }
 .sidebar-mensagens {
     padding: 10px;
     background: #dcdcdc;
 }
+#mensagens input[type="checkbox"] {
+	margin-right: 5px;
+}
+
 .sidebar-mensagens h4 {
     color: #5d5d5d;
     font-weight: 700;
@@ -1122,6 +1166,15 @@ Piscadinhas e etc
     margin-top: 0;
     margin-bottom: 5px;
 }
+.item-perfil h6 a:hover {
+	text-decoration: none;
+	color: black;
+}
+.item-perfil h6 a {
+	text-decoration: none;
+	color: #9b1143;
+}
+
 .item-perfil p {
     font-size: 11px;
     font-weight: 300;
@@ -1206,8 +1259,13 @@ Busca
 .area-busca form {
 }
 .area-busca label {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
+}
+div.form-group:nth-child(5) > label:nth-child(1) {
+	top: 2px;
+	position: relative;
+	margin-left: 19px;
 }
 .area-busca .form-inline {
 }
@@ -1221,7 +1279,7 @@ Busca
 }
 .area-busca input[type=checkbox] {
         font-size: 10px;
-        margin-right: 10px;
+        margin-right: 2px;
     }
 
 
@@ -1486,7 +1544,20 @@ Perfil Membro
 *
 Modals
 */
-
+#notifica-favorito .btn-enviar {
+	width: 100%;
+}
+#modal-foto p {
+	font-size: 14px;
+}
+#notifica-acao-curtida .btn-enviar {
+	width: 100%;
+	margin-top: 10px;
+}
+#notifica-acao-psicada .btn-enviar {
+	width: 100%;
+	margin-top: 10px;
+}
 #lupa h3{
     font-size: 15px;
     margin-top: 0;
@@ -1608,4 +1679,66 @@ Content Faq
 }
 #faq .panel-group .panel+.panel {
 	margin-top: 0;
+}
+
+
+
+
+.background-overlay-light:before {
+  	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.99);
+	content: " ";
+	width: 100%;
+	z-index: 9999;
+	margin-top: 150px;
+	text-align: center;
+}
+.background-overlay-light h2 {
+	z-index: 9999;
+	position: absolute;
+	padding: 220px;
+	width: 100%;
+	text-align: center;
+}
+.background-overlay-light .btn-enviar {
+	z-index: 9999;
+	position: absolute;
+	width: 50%;
+	margin-left: 280px;
+	margin-top: 270px;
+	text-align: center;
+}
+@media(max-width:780px) {
+	.background-overlay-light:before {
+  	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.99);
+	content: " ";
+	width: 100%;
+	z-index: 9999;
+	margin-top: 170px;
+	text-align: center;
+}
+.background-overlay-light .btn-enviar {
+	z-index: 9999;
+	position: absolute;
+	width: 50%;
+	margin-left: 80px;
+	margin-top: 140px;
+	text-align: center;
+}
+.background-overlay-light h2 {
+	z-index: 9999;
+	position: absolute;
+	padding: 30px;
+	width: 100%;
+	text-align: center;
+}
 }

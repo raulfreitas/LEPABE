@@ -161,33 +161,11 @@
 </section>
 <!-- .end chat -->
 
-
     <div class="container">
     <!--area util -->
     <div class="area-util">
 
-     							<!-- modal editar foto -->
-                                <div class="modal fade" id="editar-foto" tabindex="-1" role="dialog">
-                                  <div style="width: 250px !important;" class="modal-dialog  modal-lg" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title pull-left" id="myModalLabel">Editar Foto</h4>
-                                        <button type="button" class="btn btn-enviar pull-right"><i class="fa fa-camera fa-lg" aria-hidden="true"></i>
- Adicionar Foto</button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
-                                         </div>
-                                          <!-- .end row-->
-                                          </div>
-                                      </div>
-                                      <!-- .end -->
-                                    </div>
-
-									<!-- .end modal editar foto-->
-
-							   <!-- modal lupa -->
+	       <!-- modal lupa -->
                                 <div class="modal fade" id="lupa" tabindex="-1" role="dialog">
                                   <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -310,25 +288,202 @@
                                 </div>
                               <!-- .end modal lupa -->
 
-							  <!-- modal notifica favoritos -->
-                                <div class="modal fade" id="notifica-favorito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+
+
+                            <!-- modal busca avancada -->
+                                <div class="modal fade" id="busca-avancada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                   <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                       <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
+                                        <h4 class="modal-title" id="myModalLabel">Busca avançada</h4>
                                       </div>
                                       <div class="modal-body">
+                                        <form action="#">
 
-									  	 <h4 class="modal-title text-center" id="myModalLabel">Favoritado com sucesso!</h4>
 
-									  	 <a href="favoritos.html" class="btn btn-enviar">Ir para meus favoritos</a>
 
-                                       </div>
+							            <label>Aparência</label>
+                                        <div class="row">
+					                            <div class="col-lg-4">
+						                            <div class="form-group">
+					                                <select class="form-control">
+					                                    <option>Cor dos olhos</option>
+					                                    <option>2</option>
+					                                    <option>3</option>
+					                                    <option>4</option>
+					                                    <option>5</option>
+					                                </select>
+						                            </div>
+					                            </div>
+					                            <div class="col-lg-4">
+						                            <div class="form-group">
+					                                <select class="form-control">
+					                                    <option>Cor do Cabelo</option>
+					                                    <option>2</option>
+					                                    <option>3</option>
+					                                    <option>4</option>
+					                                    <option>5</option>
+					                                </select>
+						                            </div>
+					                            </div>
+					                            <div class="col-lg-4">
+						                            <div class="form-group">
+					                                <select class="form-control">
+					                                    <option>Tom da Pele</option>
+					                                    <option>2</option>
+					                                    <option>3</option>
+					                                    <option>4</option>
+					                                    <option>5</option>
+					                                </select>
+						                            </div>
+					                            </div>
+					                            <div class="col-lg-4" style="margin-top:10px;">
+						                            <div class="form-group">
+					                                <select class="form-control">
+					                                    <option>Altura</option>
+					                                    <option>2</option>
+					                                    <option>3</option>
+					                                    <option>4</option>
+					                                    <option>5</option>
+					                                </select>
+						                            </div>
+					                            </div>
+					                            <div class="col-lg-4" style="margin-top:10px;">
+						                            <div class="form-group">
+					                                <select class="form-control">
+					                                    <option>Peso</option>
+					                                    <option>2</option>
+					                                    <option>3</option>
+					                                    <option>4</option>
+					                                    <option>5</option>
+					                                </select>
+						                            </div>
+					                            </div>
+					                            <div class="col-lg-4" style="margin-top:10px;">
+						                            <div class="form-group">
+					                                <select class="form-control">
+					                                    <option>Tipo Físico</option>
+					                                    <option>2</option>
+					                                    <option>3</option>
+					                                    <option>4</option>
+					                                    <option>5</option>
+					                                </select>
+						                            </div>
+					                            </div>
+
+
+
+	                                          <div class="col-lg-6">
+                                                <div class="form-group">
+                                                <label>Interesse</label>
+                                                <select class="form-control">
+                                                    <option>Solteiro</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-lg-6">
+                                                <div class="form-group">
+                                                <label>Religião</label>
+                                                <select class="form-control">
+                                                    <option>Solteiro</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-lg-6">
+                                                <div class="form-group">
+                                                <label>Filhos</label>
+                                                <select class="form-control">
+                                                    <option>Sim</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                              </div>
+                                          </div>
+
+
+
+                                             <div class="col-lg-6">
+                                                <div class="form-group">
+                                                <label>Signo</label>
+                                                <select class="form-control">
+                                                    <option>Gêmeos</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                              </div>
+                                          </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                <label>Fuma</label>
+                                                <select class="form-control">
+                                                    <option>Sim</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                              </div>
+                                          </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                <label>Estado Civil</label>
+                                                <select class="form-control">
+                                                    <option>Solteiro</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                              </div>
+                                          </div>
+                                           <div class="col-lg-6">
+                                                <div class="form-group">
+                                                <label>Bebe</label>
+                                                <select class="form-control">
+                                                    <option>Socialmente</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                              </div>
+                                          </div>
+
+
+
+                                          <!-- .end row-->
+                                          </div>
+
+
+                                        </form>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-enviar">Pesquisar</button>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
-                              <!-- .end modal notifica favorito -->
+                              <!-- .end modal busca avancada -->
+
+
+
+
 
                               <!-- modal notifica piscada -->
                                 <div class="modal fade" id="notifica-acao-psicada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -341,7 +496,7 @@
                                       <div class="modal-body">
 
 									  	 <h4 class="modal-title text-center" id="myModalLabel">Piscadinha enviada com sucesso!</h4>
-									  	 <a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" class="btn btn-enviar">Ir para minhas piscadinhas</a>
+									  	 <a href="piscadinha.html" class="btn btn-enviar">Ir para minhas piscadinhas</a>
 
 
                                        </div>
@@ -361,28 +516,32 @@
 
 									  	 <h4 class="modal-title text-center" id="myModalLabel">Curtido com sucesso!</h4>
 
-									  	 <a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html" class="btn btn-enviar">Ir para minhas curtidas</a>
+									  	 <a href="curtidas.html" class="btn btn-enviar">Ir para minhas curtidas</a>
 
                                        </div>
                                     </div>
                                   </div>
                                 </div>
-                              <!-- .end modal notifica piscada -->
-
-
-
-                              <!-- modal bloquear -->
-                                <div class="modal fade" id="notifica-bloqueado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                              <!-- .end modal notifica curtida -->
+                              <!-- modal notifica favoritos -->
+                                <div class="modal fade" id="notifica-favorito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                   <div class="modal-dialog" role="document">
                                     <div class="modal-content">
-                                      <div class="modal-body text-center">
-									  	<h4 class="modal-title" id="myModalLabel">Bloqueado com sucesso!</h4>
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                                      </div>
+                                      <div class="modal-body">
+
+									  	 <h4 class="modal-title text-center" id="myModalLabel">Favoritado com sucesso!</h4>
+
+									  	 <a href="favoritos.html" class="btn btn-enviar">Ir para meus favoritos</a>
+
                                        </div>
                                     </div>
                                   </div>
                                 </div>
-                              <!-- .end modal bloquear -->
-
+                              <!-- .end modal notifica favorito -->
                               <!-- modal envia mensagem -->
                                 <div class="modal fade" id="enviar-mensagem" tabindex="-1" role="dialog">
                                   <div  class="modal-dialog  modal-lg" role="document">
@@ -442,526 +601,402 @@
                                     </div>
 									<!-- .end modal enviar mensagem-->
 
-							    <!-- modal Denuncia -->
-                                <div class="modal fade" id="denunciar-perfil" tabindex="-1" role="dialog">
-                                  <div  class="modal-dialog  modal-lg" role="document">
+									<!-- modal editar foto -->
+                                <div class="modal fade" id="editar-foto" tabindex="-1" role="dialog">
+                                  <div style="width: 250px !important;" class="modal-dialog  modal-lg" role="document">
                                     <div class="modal-content">
                                       <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title pull-left" id="myModalLabel">Denunciar Perfil</h4>
-                                               </div>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Editar Foto</h4>
+                                        <button type="button" class="btn btn-enviar pull-right"><i class="fa fa-camera fa-lg" aria-hidden="true"></i>
+ Adicionar Foto</button>
+                                      </div>
                                       <div class="modal-body">
-
-	                                     	 <!-- text area-->
-					                          <form>
-
-					                              <div class="form-group">
-					                              <label>Escreva sua denúncia</label>
-					                               <textarea rows="10" class="form-control"></textarea>
-					                             </div>
-					                             <div class="form-group">
-					                              <button id="enviando-mensagem" type="button" class="btn btn-enviar"><i class="fa 												  fa-paper-plane fa-lg" aria-hidden="true"></i>
-												  Enviar</button>
-					 							<div class="alert alert-success" style="margin-top: 20px;" role="alert">Denúncia 													Enviada com sucesso!</div>
-					                             </div>
-					                          </form>
-					                          <!-- .end text area -->
-
-	                                   </div>
+                                        <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
+                                         </div>
                                           <!-- .end row-->
                                           </div>
                                       </div>
                                       <!-- .end -->
                                     </div>
-									<!-- .end modal denuncia -->
+
+                              <!-- .end modal editar foto-->
+                              <!-- modal meu album -->
+                                <div class="modal fade" id="minhas-fotos" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Album de Fotos</h4>
+                                        <button type="button" class="btn btn-enviar pull-right"><i class="fa fa-camera fa-lg" aria-hidden="true"></i>
+ Adicionar Fotos</button>
+                                      </div>
+                                      <div class="modal-body">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                             <div class="tabs-content">
+
+                                           <!-- Nav tabs -->
+                                          <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#fotos" aria-controls="fotos" role="tab" data-toggle="tab">Fotos</a></li>
+                                            <li role="presentation"><a href="#fotos-secretas" aria-controls="fotos-secretas" role="tab" data-toggle="tab">Fotos Secretas</a></li>
+                                          </ul>
+
+                                          <!-- Tab panes -->
+                                          <div class="tab-content">
+
+                                            <!-- area recebidas-->
+                                            <div role="tabpanel" class="tab-pane fade in active" id="fotos">
+                                                <div class="row">
+                                                    <!-- item -->
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <div class="box-fotos text-center">
+                                                            <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
+                                                            <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <hr>
+                                                            <a href="#" class="btn btn-white">Curtidas (10)</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- .end item -->
+                                                    <!-- item -->
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <div class="box-fotos text-center">
+                                                            <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
+
+                                                             <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <hr>
+                                                            <a href="#" class="btn btn-white">Curtidas (15)</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- .end item -->
+                                                    <!-- item -->
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <div class="box-fotos text-center">
+                                                            <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
+                                                            <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <hr>
+                                                            <a href="#" class="btn btn-white">Curtidas (4)</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- .end item -->
+                                                </div>
+                                                <!-- .end row -->
+                                            </div>
+                                            <!-- .end area recebidas -->
+
+                                            <!-- tab enviadas -->
+                                            <div role="tabpanel" class="tab-pane fade" id="fotos-secretas">
+                                                   <div class="row">
+                                                     <!-- item -->
+                                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <div class="box-fotos text-center">
+                                                            <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
+                                                            <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <hr>
+                                                            <a href="#" class="btn btn-white">Curtidas (4)</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- .end item -->
 
 
 
+                                                </div>
+                                                <!-- .end row -->
+                                                </div>
+                                                <!-- .end col-->
+                                            </div>
+                                            <!-- .end tab enviadas -->
+                                          </div>
 
-        <div id="perfil-membro">
+                                          <!-- .end Nav Tabs -->
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+                                  </div>
+                                </div>
+                              <!-- .end modal  meu album -->
+
 
 
         <div class="row">
-            <!-- menu lateral -->
-            <div class="col-lg-8 col-md-8 col-sm-8">
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                            <img src="assets/images/thumb_perfil_membro.png" class="img-thumbnail">
-                    </div>
-                      <div class="col-lg-8 col-md-8 col-sm-8">
-
-                            <!-- title perfil -->
-                            <h2 class="pull-left">CahFreitas06</h2>
-                            <ul class="list-inline pull-left">
-                                <li><a data-toggle="modal"  href="#notifica-acao-psicada" data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye fa-2x" aria-hidden="true"></i></a></li>
-                                <li><a data-toggle="modal"  href="#notifica-favorito" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star fa-2x" aria-hidden="true"></i></a></li>
-                                <li><a data-toggle="modal"  href="#notifica-acao-curtida" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <div class="clearfix"></div>
-                            <blockquote>35 anos, Interessado em um relacionamento  sério com homens de 18 à 25 anos, 100Km</blockquote>
-                            <!-- progress bar-->
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                    60% compatível
-                                </div>
-                            </div>
-                          <!-- .end progress bar-->
-                            <p class="mensagem">"Faça o meu dia mais alegre! Me envie uma mensagem!"</p>
-                         <!-- .end title perfil -->
-
-                         <ul class="list-inline">
-                            <li><a data-toggle="modal"  href="#enviar-mensagem"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
- Enviar mensagem</a></li>
-                            <!--<li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html"><i class="fa fa-gift fa-2x" aria-hidden="true"></i>
- Presentes</a></li>-->
-                            <!--<li><a id="chat-open" href="#" ><i class="fa fa-comments fa-2x" aria-hidden="true"></i>
- Chat</a></li>-->
-                         </ul>
-
-                    </div>
+             <!-- menu lateral -->
+            <div class="col-lg-3">
+                <div class="perfil">
+                    <a href="meu-perfil.html"><img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail"></a>
+                   <a data-toggle="modal" data-target="#editar-foto" href="#"> <button class="btn editar-foto">Editar Foto</button> </a>
+                    <hr>
+                    <ul>
+                        <li>30 visualizações de perfil</li>
+                        <li><a data-toggle="modal" data-target="#minhas-fotos" href="#">Meus Álbuns</a></li>
+                    </ul>
                 </div>
 
+                <div class="menu-lateral">
+                    <ul>
+                        <li><a href="mensagens.html">Mensagens</a></li>
+                        <li><a id="chat-open-menu" href="#">Chat</a></li>
+                        <li><a href="pretendentes-do-dia.html">Pretendentes do dia</a></li>
+                        <li><a href="busca.html">Busca</a></li>
+                        <li><a href="piscadinha.html">Piscadinhas</a></li>
+                        <li><a href="viu-perfil.html">Viu Perfil</a></li>
+                        <!--<li><a href="presentes.html">Presentes</a></li>-->
+                        <li><a href="curtidas.html">Curtidas</a></li>
+                        <li><a href="favoritos.html">Favoritos</a></li>
 
-
+                    </ul>
+                </div>
             </div>
             <!-- .end menu lateral -->
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <a href="#" class="btn btn-online">ONLINE AGORA</a>
-                <hr>
-                <ul class="list-unstyled">
-                    <li><i class="fa fa-ban fa-2x" aria-hidden="true"></i> <a data-toggle="modal"  href="#notifica-bloqueado">BLOQUEAR NA BUSCA</a></li>
-                    <li><i class="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i> <a data-toggle="modal"  href="#denunciar-perfil">DENUNCIAR</a></li>
-                    <li><i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i> <a data-toggle="modal"  href="#notifica-bloqueado">BLOQUEAR PERFIL</a></li>
-                </ul>
-                <!-- title-->
-                <h1 class="text-left"> Busca</h1>
-                <div class="line-purple-title"></div>
-                <!-- .end title-->
-                  <!-- form -->
-                            <div class="col-lg-12 col-md-12 col-sm-12 form-encontre wow fadeIn">
-
-                              <form>
-                                 <!--input-->
-                              <div class="form-group">
-                                <label>Sou/Interesse</label>
-                                <select class="form-control">
-                                  <option>Sexo e preferência</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                              <!-- input end-->
-                              <!--input-->
-                              <div class="row">
-                              <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                              <label>País</label>
-                                <input class="form-control"  type="text" placeholder="seu país" name="">
-                              </div>
-                              <!-- input end -->
-                              <!--input-->
-                              <div class="form-group col-md-7 col-sm-7 col-xs-12">
-                              <label>Estado</label>
-                                <select class="form-control">
-                                  <option>Seu Estado</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                              </div>
-                              <!-- input end -->
-                               <!--button-->
-                              <div class="form-group">
-                                <button class="btn col-md-12" type="submit">PROCURAR</button>
-                              </div>
-                              <!-- button end -->
-                              </form>
-                            </div>
-                            <!-- .end form-->
-            </div>
-
-
-
-            </div>
-            <!-- .end row-->
-
-            <div class="row">
 
             <!-- content dir -->
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-9">
+                <div id="editar-perfil">
 
 
-                <div class="row">
-
-                    <div class="col-lg-12 col-md-12 col-sm-12 informacoes">
-
-                <!-- title-->
-                <h1 class="text-left">Sobre</h1>
+                 <!-- title-->
+                <h1 class="text-left">Favoritos</h1>
                 <div class="line-purple-title"></div>
                 <!-- .end title-->
 
-                    <div class="row">
-                        <!-- item-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <ul class="list-unstyled">
-                                <li><h3>Interesses</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Relacionamento sério</li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <li><h3>Aparência</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li><strong>Cor do cabelo:</strong>  claro</li>
-                                <li><strong>Cor dos olhos:</strong> verde</li>
-                                <li><strong>Tom da Pele:</strong> claro</li>
-                                <li><strong>Altura:</strong> 181 cm</li>
-                                <li><strong>Peso:</strong> 90kg</li>
-                                <li><strong>Tipo Físico:</strong> Magro</li>
-                            </ul>
-                        </div>
-                        <!-- .end item -->
-                        <!-- item -->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <ul class="list-unstyled">
-                                <li><h3>Formação Acadêmica</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Ensino Superior</li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <li><h3>Relegião</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Ateu</li>
-                            </ul>
-                        </div>
-                        <!-- .end item -->
-                        <!-- item -->
-                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <ul class="list-unstyled">
-                                <li><h3>Fuma</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Não</li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <li><h3>Bebe</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Socialmente</li>
-                            </ul>
-                        </div>
-                        <!-- .end item -->
 
-                        <!-- item -->
-                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <ul class="list-unstyled">
-                                <li><h3>Filhos</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Não</li>
-                            </ul>
-
-                            <ul class="list-unstyled">
-                                <li><h3>Estado Civil</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Solteiro</li>
-                            </ul>
-
-                        </div>
-                        <!-- .end item -->
-
-						<!-- item -->
-                         <div class="col-lg-4 col-md-4 col-sm-4">
-
-                            <ul class="list-unstyled">
-                                <li><h3>Filhos Futuros</h3></li>
-                                <li role="separator" class="divider"></li>
-                                <li>Sim</li>
-                            </ul>
-                        </div>
-                        <!-- .end item -->
-
-
-
-
-                    </div>
-                    <!-- .end row -->
-
-                    <hr>
-
-
-                       </div>
-                    <!-- .end informacoes-->
-                </div>
-                <!-- .end meu perfil -->
-                </div>
-            </div>
-            <!-- .end content dir-->
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 wow fadeIn">
-                    <!-- title-->
-                    <h1 class="text-left"> Galeria de Fotos</h1>
-                    <div class="line-purple-title"></div>
-                    <!-- .end title-->
-
-
-                    <div class="tabs-content">
+                <div class="tabs-content">
 
                        <!-- Nav tabs -->
                       <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#fotos" aria-controls="fotos" role="tab" data-toggle="tab">Fotos</a></li>
-                        <li role="presentation"><a href="#fotos-secretas" aria-controls="fotos-secretas" role="tab" data-toggle="tab">Fotos Secretas</a></li>
+                        <li role="presentation" class="active"><a href="#recebidas" aria-controls="recebidas" role="tab" data-toggle="tab">Favoritados</a></li>
+
                       </ul>
 
                       <!-- Tab panes -->
                       <div class="tab-content">
 
                         <!-- area recebidas-->
+                        <div role="tabpanel" class="tab-pane fade in active" id="recebidas">
 
+                          <!--form-->
+                          <form class="form-inline">
+                              <div class="form-group">
+                              <label>Filtros</label>
+                               <select class="form-control">
+                                <option>últimos 30 dias</option>
+                                <option>últimos 15 dias</option>
+                                <option>últimos 7 dias</option>
 
-
-
-					 		<!-- modal comenta foto -->
-                                <div class="modal fade" id="comenta-foto" tabindex="-1" role="dialog">
-                                  <div style="width: 450px !important;" class="modal-dialog  modal-lg" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title pull-left" id="myModalLabel">Escreva seu comentário</h4>
-                                      </div>
-                                      <div class="modal-body">
-
-	                                        <!-- text area-->
-						                          <form>
-						                              <div class="form-group">
-						                              <label>Escreva abaixo.</label>
-						                               <textarea rows="10" class="form-control"></textarea>
-						                             </div>
-						                             <div class="form-group">
-						                                <button id="enviando-mensagem" type="button" class="btn btn-enviar"><i class="fa 												  fa-paper-plane fa-lg" aria-hidden="true"></i>
-												  Enviar</button>
-					 									</div>
-						                          </form>
-						                          		<div class="alert alert-success" style="margin-top: 20px;" role="alert">Comentário enviado com sucesso!</div>
-						                          <!-- .end text area -->
-
-                                         </div>
-                                          <!-- .end row-->
-                                          </div>
-                                      </div>
-                                      <!-- .end -->
-                                    </div>
-                              <!-- .end modal comenta foto -->
-
-
-                              <!-- modal foto -->
-                                <div class="modal fade" id="modal-foto" tabindex="-1" role="dialog">
-                                  <div style="width: 450px !important;" class="modal-dialog  modal-lg" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title pull-left" id="myModalLabel">Foto 01</h4>
-                                      </div>
-                                      <div class="modal-body">
-
-						                    <div class="form-group">
-						                        <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
-						                     </div>
-
-                                         </div>
-                                         <div class="modal-footer" style="text-align: left !important;">
-	                                         <h4 class="modal-title text-left" >Comentários </h4>
-											 <hr>
-
-											 <h5> Membro 01 </h5>
-	                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur, mi ac tincidunt bibendum, erat ligula rutrum lorem, id dignissim odio mauris nec nisl.</p>
-	                                         <hr>
-	                                         <h5> Membro 01 </h5>
-	                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur, mi ac tincidunt bibendum, erat ligula rutrum lorem, id dignissim odio mauris nec nisl.</p>
-
-                                         </div>
-                                          <!-- .end row-->
-                                          </div>
-                                      </div>
-                                      <!-- .end -->
-                                    </div>
-
-                              <!-- .end modal foto -->
-
-                               <!-- modal curtir foto -->
-                                <div class="modal fade" id="curti-foto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                  <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-body text-center">
-									  	<h4 class="modal-title" id="myModalLabel">Curtido com sucesso!</h4>
-                                       </div>
-                                    </div>
-                                  </div>
+                              </select>
+                             </div>
+                             <div class="form-group">
+                              <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Apenas com foto
+                                  </label>
                                 </div>
-                              <!-- .end modal curtir foto  -->
-
-
-
-
-                        <div role="tabpanel" class="tab-pane fade in active" id="fotos">
-                            <div class="row">
-                                <!-- item -->
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="box-fotos text-center">
-                                        <a href="#modal-foto" data-toggle="modal"><img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail"></a>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
-                                        <hr>
-                                        <a href="#curti-foto" data-toggle="modal" class="btn btn-white">Curtir</a>
-                                        <a href="#comenta-foto" data-toggle="modal" class="btn btn-white">Comentar</a>
-                                    </div>
+                              </div>
+                              <div class="form-group">
+                              <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Somente Online
+                                  </label>
                                 </div>
-                                <!-- .end item -->
-                                <!-- item -->
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="box-fotos text-center">
-                                        <a href="#modal-foto" data-toggle="modal"><img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail"></a>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
-                                        <hr>
-                                        <a href="#curti-foto" data-toggle="modal" class="btn btn-white">Curtir</a>
-                                        <a href="#comenta-foto" data-toggle="modal" class="btn btn-white">Comentar</a>                                    </div>
-                                </div>
-                                <!-- .end item -->
-                                <!-- item -->
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="box-fotos text-center">
-                                        <a href="#modal-foto" data-toggle="modal"><img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail"></a>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
-                                        <hr>
-                                        <a href="#curti-foto" data-toggle="modal" class="btn btn-white">Curtir</a>
-                                        <a href="#comenta-foto" data-toggle="modal" class="btn btn-white">Comentar</a>                                    </div>
-                                </div>
-                                <!-- .end item -->
-                            </div>
-                            <!-- .end row -->
+                              </div>
+                          </form>
+                          <!-- .end form -->
+
+                          <div class="row">
+
+                              <!-- item-->
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <div class="item-perfil">
+                                            <div class="row">
+
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <a href="perfil-membro.html"><img class="img-responsive" src="assets/images/thumb_item_perfil.png"></a>
+                                                </div>
+
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <h6><a href="perfil-membro.html">CLEICIANNY</a></h6>
+                                                    <p>18 anos</p>
+                                                    <p>Jardim São Luís</p>
+
+                                                    <ul>
+                                                        <li><a data-toggle="modal" href="#enviar-mensagem" data-toggle="tooltip" data-placement="bottom" title="Enviar Mensagem"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a></li>
+                                                        <li><a data-toggle="modal"  href="#lupa" data-toggle="tooltip" data-placement="bottom" title="Espiar"><i class="fa fa-search" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-psicada"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </a></li>
+                                                       <li><a data-toggle="modal"  href="#notifica-favorito" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-curtida" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a></li>
+                                                    </ul>
+
+
+                                                    <em class="text-right">há 30 minutos </em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <!-- .end item-->
+
+                             <!-- item-->
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <div class="item-perfil">
+                                            <div class="row">
+
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <a href="perfil-membro.html"><img class="img-responsive" src="assets/images/thumb_item_perfil.png"></a>
+                                                </div>
+
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <h6><a href="perfil-membro.html">CLEICIANNY</a></h6>
+                                                    <p>18 anos</p>
+                                                    <p>Jardim São Luís</p>
+
+                                                    <ul>
+                                                        <li><a data-toggle="modal" href="#enviar-mensagem" data-toggle="tooltip" data-placement="bottom" title="Enviar Mensagem"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a></li>
+                                                        <li><a data-toggle="modal"  href="#lupa" data-toggle="tooltip" data-placement="bottom" title="Espiar"><i class="fa fa-search" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-psicada"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </a></li>
+                                                       <li><a data-toggle="modal"  href="#notifica-favorito" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-curtida" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a></li>
+                                                    </ul>
+
+
+                                                    <em class="text-right">há 30 minutos </em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <!-- .end item-->
+
+
+
+                              <!-- item-->
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <div class="item-perfil">
+                                            <div class="row">
+
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <a href="perfil-membro.html"><img class="img-responsive" src="assets/images/thumb_item_perfil.png"></a>
+                                                </div>
+
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <h6><a href="perfil-membro.html">CLEICIANNY</a></h6>
+                                                    <p>18 anos</p>
+                                                    <p>Jardim São Luís</p>
+
+                                                    <ul>
+                                                        <li><a data-toggle="modal" href="#enviar-mensagem" data-toggle="tooltip" data-placement="bottom" title="Enviar Mensagem"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a></li>
+                                                        <li><a data-toggle="modal"  href="#lupa" data-toggle="tooltip" data-placement="bottom" title="Espiar"><i class="fa fa-search" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-psicada"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </a></li>
+                                                       <li><a data-toggle="modal"  href="#notifica-favorito" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-curtida" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a></li>
+                                                    </ul>
+
+
+                                                    <em class="text-right">há 30 minutos </em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <!-- .end item-->
+                              <!-- item-->
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <div class="item-perfil">
+                                            <div class="row">
+
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <a href="perfil-membro.html"><img class="img-responsive" src="assets/images/thumb_item_perfil.png"></a>
+                                                </div>
+
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <h6><a href="perfil-membro.html">CLEICIANNY</a></h6>
+                                                    <p>18 anos</p>
+                                                    <p>Jardim São Luís</p>
+
+                                                    <ul>
+                                                        <li><a data-toggle="modal" href="#enviar-mensagem" data-toggle="tooltip" data-placement="bottom" title="Enviar Mensagem"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a></li>
+                                                        <li><a data-toggle="modal"  href="#lupa" data-toggle="tooltip" data-placement="bottom" title="Espiar"><i class="fa fa-search" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-psicada"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </a></li>
+                                                       <li><a data-toggle="modal"  href="#notifica-favorito" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a></li>
+                                                        <li><a data-toggle="modal"  href="#notifica-acao-curtida" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a></li>
+                                                    </ul>
+
+
+                                                    <em class="text-right">há 30 minutos </em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <!-- .end item-->
+                           </div>
                         </div>
-                        <!-- .end area recebidas -->
 
-                        <!-- tab enviadas -->
-                        <div role="tabpanel" class="tab-pane fade" id="fotos-secretas">
-
-                               <div class="row">
-		                             <div class="background-overlay-light">
-			                             <h2>ASSINE AGORA E VEJA MAIS FOTOS</h2>
-			                             <a href="planos.html" class="btn btn-enviar">ASSINAR AGORA</a>
-		                             </div>
-
-                                <!-- item -->
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="box-fotos text-center">
-                                       <a href="#modal-foto" data-toggle="modal"><img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail"></a>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
-                                        <hr>
-                                        <a href="#curti-foto" data-toggle="modal" class="btn btn-white">Curtir</a>
-                                        <a href="#comenta-foto" data-toggle="modal" class="btn btn-white">Comentar</a>                                    </div>
-                                </div>
-                                <!-- .end item -->
-
-
-                            </div>
-                            <!-- .end row -->
-                        </div>
-                        <!-- .end tab enviadas -->
-                      </div>
 
                       <!-- .end Nav Tabs -->
                      </div>
 
-
-
-
-
-
-
                 </div>
             </div>
-            <!-- .end row-->
-             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <!-- title-->
-                    <h1 class="text-left">Quem viu esse perfil também visitou esses</h1>
-                    <div class="line-purple-title"></div>
-                    <!-- .end title-->
-
-                    <div class="row">
-                                <!-- item-->
-                                      <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <div class="item-perfil">
-                                            <div class="row">
-
-                                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                                     <a href="perfil-membro.html"><img class="img-responsive" src="assets/images/thumb_item_perfil.png"></a>
-                                                </div>
-
-                                                <div class="col-lg-8 col-md-8 col-sm-8">
-                                                    <h6><a href="perfil-membro.html">CLEICIANNY</a></h6>
-                                                    <p>18 anos</p>
-                                                    <p>Jardim São Luís</p>
-
-                                                    <ul>
-                                                        <li><a data-toggle="modal" href="#enviar-mensagem" data-toggle="tooltip" data-placement="bottom" title="Enviar Mensagem"><i class="fa fa-envelope" aria-hidden="true"></i>
-        </a></li>
-                                                        <li><a data-toggle="modal"  href="#lupa" data-toggle="tooltip" data-placement="bottom" title="Espiar"><i class="fa fa-search" aria-hidden="true"></i>
-                                                        </a></li>
-                                                        <li><a data-toggle="modal"  href="#notifica-acao-psicada"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye" aria-hidden="true"></i>
-                                                        </a></li>
-                                                       <li><a data-toggle="modal"  href="#notifica-favorito" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
-                                                        </a></li>
-                                                        <li><a data-toggle="modal"  href="#notifica-acao-curtida" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>
-                                                    </ul>
-
-
-                                                    <em class="text-right">há 30 minutos </em>
-                                                </div>
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <!-- .end item-->
-                                      <!-- item-->
-                                      <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <div class="item-perfil">
-                                            <div class="row">
-
-                                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                                     <a href="perfil-membro.html"><img class="img-responsive" src="assets/images/thumb_item_perfil.png"></a>
-                                                </div>
-
-                                                <div class="col-lg-8 col-md-8 col-sm-8">
-                                                    <h6><a href="perfil-membro.html">CLEICIANNY</a></h6>
-                                                    <p>18 anos</p>
-                                                    <p>Jardim São Luís</p>
-
-                                                    <ul>
-                                                        <li><a data-toggle="modal" href="#enviar-mensagem" data-toggle="tooltip" data-placement="bottom" title="Enviar Mensagem"><i class="fa fa-envelope" aria-hidden="true"></i>
-        </a></li>
-                                                        <li><a data-toggle="modal"  href="#lupa" data-toggle="tooltip" data-placement="bottom" title="Espiar"><i class="fa fa-search" aria-hidden="true"></i>
-                                                        </a></li>
-                                                        <li><a data-toggle="modal"  href="#notifica-acao-psicada"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye" aria-hidden="true"></i>
-                                                        </a></li>
-                                                       <li><a data-toggle="modal"  href="#notifica-favorito" data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star" aria-hidden="true"></i>
-                                                        </a></li>
-                                                        <li><a data-toggle="modal"  href="#notifica-acao-curtida" data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-heart" aria-hidden="true"></i>
-                                                        </a></li>
-                                                    </ul>
-
-
-                                                    <em class="text-right">há 30 minutos </em>
-                                                </div>
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <!-- .end item-->
-                    </div>
-                    <!-- .end row-->
-                </div>
-            </div>
-            <!-- .end row-->
-
+            <!-- .end content dir-->
         </div>
      </div>
      <!-- .end area util -->
@@ -1056,9 +1091,6 @@
 </div>
 </section>
 <!-- footer.end -->
-
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

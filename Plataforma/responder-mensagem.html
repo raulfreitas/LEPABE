@@ -160,12 +160,12 @@
     <!--.end vendo perfil-->
 </section>
 <!-- .end chat -->
-<div class="container">
+
+    <div class="container">
     <!--area util -->
     <div class="area-util">
 
-
-    <!-- modal editar foto -->
+      <!-- modal editar foto -->
                                 <div class="modal fade" id="editar-foto" tabindex="-1" role="dialog">
                                   <div style="width: 250px !important;" class="modal-dialog  modal-lg" role="document">
                                     <div class="modal-content">
@@ -187,7 +187,7 @@
                               <!-- .end modal editar foto-->
 
 
-<!-- modal meu album -->
+    <!-- modal meu album -->
                                 <div class="modal fade" id="minhas-fotos" tabindex="-1" role="dialog">
                                   <div class="modal-dialog  modal-lg" role="document">
                                     <div class="modal-content">
@@ -303,7 +303,6 @@
                                                     <!-- .end item -->
 
 
-
                                                 </div>
                                                 <!-- .end row -->
                                                 </div>
@@ -325,10 +324,10 @@
 
         <div class="row">
 
-             <!-- menu lateral -->
+            <!-- menu lateral -->
             <div class="col-lg-3">
                 <div class="perfil">
-                    <a href="meu-perfil.html"><img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail"></a>
+                    <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
                    <a data-toggle="modal" data-target="#editar-foto" href="#"> <button class="btn editar-foto">Editar Foto</button> </a>
                     <hr>
                     <ul>
@@ -348,7 +347,6 @@
                         <!--<li><a href="presentes.html">Presentes</a></li>-->
                         <li><a href="curtidas.html">Curtidas</a></li>
                         <li><a href="favoritos.html">Favoritos</a></li>
-
                     </ul>
                 </div>
             </div>
@@ -360,285 +358,43 @@
 
 
                  <!-- title-->
-                <h1 class="text-left"> Edição Perfil</h1>
+                <h1 class="text-left"> Mensagens</h1>
                 <div class="line-purple-title"></div>
                 <!-- .end title-->
 
 
 
+                <div id="envia-mensagem">
+                    <div class="row">
+                      <div class="col-lg-12">
+                       <h2>CLEICIANNY</h2>
+                       <div class="msg-prontas">
+                          <!-- text area-->
+                          <form>
+                              <div class="form-group">
+                              <label>Escreva sua mensagem</label>
+                               <textarea rows="10" class="form-control"></textarea>
+                             </div>
+                             <div class="form-group">
+							 	<button id="enviando-mensagem" type="button" class="btn btn-enviar"><i class="fa fa-paper-plane fa-								lg" aria-hidden="true"></i>Enviar</button>
 
-    <!-- accords-->
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
+                             </div>
+                          </form>
+                          <div class="alert alert-success" style="margin-top: 20px;" role="alert">Mensagem enviada com sucesso!</div>
 
-
-
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          EDITAR PERFIL
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-
-          <form style="margin-bottom:20px;" id="form-cadastrese">
-
-	            <div class="form-group">
-                        <div class="row">
-
-                             <div class="col-lg-4">
-	                            <label>Nome</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-	                            <label>Idade</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-	                            <label>Data de Nascimento</label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                        </div>
-	                 </div>
-                    <div class="form-group">
-                        <label>Chamada</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                          <!-- .end text area -->
+                       </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                        <label>Interesse</label>
-                        <select class="form-control">
-                            <option>Relacionamento sério</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Sua Aparência</label>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <select class="form-control">
-                                    <option>Cor dos olhos</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <select class="form-control">
-                                    <option>Cor do Cabelo</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <select class="form-control">
-                                    <option>Tom da Pele</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4" style="margin-top:10px;">
-                                <select class="form-control">
-                                    <option>Altura</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4" style="margin-top:10px;">
-                                <select class="form-control">
-                                    <option>Peso</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4" style="margin-top:10px;">
-                                <select class="form-control">
-                                    <option>Tipo Físico</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-
-
-                            <div class="col-lg-6">
-                                <label>Estado Civil</label>
-                                <select class="form-control">
-                                    <option>Solteiro</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-lg-6">
-                                <label>Formação Acadêmica</label>
-
-                                <select class="form-control">
-                                    <option>Solteiro</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-lg-6">
-                                <label>Relegião</label>
-                                <select class="form-control">
-                                    <option>Católico</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Filhos</label>
-                                        <select class="form-control">
-                                            <option>Não</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Filhos Futuros</label>
-                                        <select class="form-control">
-                                            <option>Sim</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-3">
-                                <label>Signo ?</label>
-                                <select class="form-control">
-                                    <option>Gêmeos</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-lg-3">
-                                <label>Fuma</label>
-
-                                <select class="form-control">
-                                    <option>Sim</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-
-
-                            <div class="col-lg-3">
-                                <label>Bebe</label>
-                                <select class="form-control">
-                                    <option>Não</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-lg-3">
-                                <label>Ativida Física</label>
-                                <select class="form-control">
-                                    <option>Não</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Hobbies ?</label>
-                                        <select class="form-control">
-                                            <option>Sim</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Animais</label>
-                                        <select class="form-control">
-                                            <option>Sim</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-
-
-                     </form>
-
-      </div>
-    </div>
-		<div class="col-lg-12"><button id="atualiza" type="button" class="btn btn-confirmar">CONFIRMAR</button></div>
-  </div>
-</div>
-
-<!--.end accords -->
-
-
+                </div>
+                <a href="mensagens.html" class="btn btn-enviar">Voltar</a>
 
 
                 </div>
             </div>
             <!-- .end content dir-->
         </div>
-		<div class="alert alert-success" style="margin-top: 20px;" role="alert">Atualizado com sucesso!</div>
-		  <a href="meu-perfil.html" class="btn btn-enviar">Voltar</a>
      </div>
      <!-- .end area util -->
  </div>

@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- header -->
+ <!-- header -->
     <header>
         <div class="container">
             <div class="row">
@@ -27,7 +27,7 @@
 
                     <!-- logo -->
                     <div class="col-lg-2 col-sm-2 col-md-12">
-                        <a href="#">
+                        <a href="meu-perfil.html">
                             <img class="logo img-responsive" src="assets/images/logo.png">
                         </a>
                     </div>
@@ -102,6 +102,7 @@
 </div>
 </header>
 <!-- .end header -->
+
 <!-- content-->
 <section id="content">
     <!-- chat -->
@@ -110,19 +111,12 @@
             <div class="row">
                 <!-- configura chat -->
                 <div class="configura-chat">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Opcões</a>
-                    <div id="options-chat-content" class="hidden">
-                        <li><a href="#">Item1</a>
-                        </li>
-                    </div>
-                        <!--
-                    <div id="options-chat-title" class="hidden">
-                        <b>Example popover #2</b> - title
-                    </div>
-                -->
-                <i class="fa fa-sliders" aria-hidden="true"></i>
-                <a href="#">Filtros</a>
+	                <i class="fa fa-sliders" aria-hidden="true"></i>
+                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Filtros</a>
+                <div id="options-chat-content" class="hidden">
+                    <li><a href="#">Somente Online</a>
+                    </li>
+                </div>
             </div>
             <!-- .end configura chat -->
             <div class="perfis-chat">
@@ -291,17 +285,26 @@
                                             <!-- tab enviadas -->
                                             <div role="tabpanel" class="tab-pane fade" id="fotos-secretas">
                                                    <div class="row">
-                                                    <!-- item -->
+                                                     <!-- item -->
                                                     <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                         <div class="box-fotos text-center">
                                                             <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                            <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
                                                             <hr>
-                                                            <a href="#" class="btn btn-white">Curtir</a>
-                                                            <a href="#" class="btn btn-white">Comentar</a>
+                                                            <a href="#" class="btn btn-white">Curtidas (4)</a>
                                                         </div>
                                                     </div>
                                                     <!-- .end item -->
+
 
 
                                                 </div>
@@ -340,9 +343,15 @@
 
                 <div class="menu-lateral">
                     <ul>
-                        <li><a href="mensagens.html">Mensagens</a></li>
+	                    <li><a href="mensagens.html">Mensagens</a></li>
                         <li><a id="chat-open-menu" href="#">Chat</a></li>
-                        <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html">Favoritos</a></li>
+                        <li><a href="pretendentes-do-dia.html">Pretendentes do dia</a></li>
+                        <li><a href="busca.html">Busca</a></li>
+                        <li><a href="piscadinha.html">Piscadinhas</a></li>
+                        <li><a href="viu-perfil.html">Viu Perfil</a></li>
+                        <!--<li><a href="presentes.html">Presentes</a></li>-->
+                        <li><a href="curtidas.html">Curtidas</a></li>
+                       <li><a href="favoritos.html">Favoritos</a></li>
                     </ul>
                 </div>
             </div>
@@ -377,12 +386,21 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        <p class="text-center">Selecione o(s) nome(s) do(s) usuário do(s) que você deseja bloquear.
-Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou que gostei do seru perfil</p>
-        <textarea class="form-control" rows="5"></textarea>
-        <hr>
+        <p class="text-center">Selecione o(s) nome(s) do(s) usuário do(s) que você deseja desbloquear.
+Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou que gostei do seu perfil</p>
 
-        <button type="submit" class="btn btn-confirmar">CONFIRMAR</button>
+		<form id="form-block" method="post" role="form">
+
+         <select class="form-control">
+		 	<option>Membro 01</option>
+		</select>
+
+		<button type="button" class="btn btn-confirmar">Confirmar </button>
+
+    	</form>
+
+		<div class="alerta"></div>
+
       </div>
     </div>
   </div>
@@ -459,7 +477,8 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 
 									              <div class="form-group">
 									                <div class="col-lg-12">
-									                    									                </div>
+										                <button type="submit" class="btn btn-enviar">Alterar</button>
+									                  </div>
 									              </div>
 
 									            </form>
@@ -516,17 +535,23 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                                         <h4 class="modal-title pull-left" id="myModalLabel">Editar Notificações</h4>
                                       </div>
                                       <div class="modal-body">
-									  			<h4>Notificações de Usuários Interessados</h4>
-									  			<li><span class="pull-left"> Gostar do Perfil – Me notifique quando um usuário estiver interessado e gostar do meu perfil </span> <span class="pull-right"><label><input type="checkbox" value=""  checked >Ativado</label></span></li>
-									  			<li><span class="pull-left"> Interesse – Me notifique quando um usuário mostrar interesse em mim a partir dos seus Pretendentes Diários. </span> <span class="pull-right"><label><input type="checkbox" value="">Desativado</label></span></li>
-									  			<hr>
-									  			<h4>Dicas, Eventos & Ofertas </h4>
 
-									  			<li><span class="pull-left"> Gostar do Perfil – Me notifique quando um usuário estiver interessado e gostar do meu perfil </span> <span class="pull-right"><label><input type="checkbox" value=""  checked>Ativado</label></span></li>
-									  			<li><span class="pull-left"> Interesse – Me notifique quando um usuário mostrar interesse em mim a partir dos seus Pretendentes Diários. </span> <span class="pull-right"><label><input type="checkbox" value="">Desativado</label></span></li>
+	                                      <form id="form-notifica">
+									  			<li><span class="pull-left">Gostar do Perfil – Me notifique quando um usuário estiver interessado e gostar do meu perfil </span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+									  			<li><span class="pull-left">Interesse – Me notifique quando um usuário mostrar interesse em mim a partir dos seus Pretendentes Diários. </span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+									  			<li><span class="pull-left"> Fotos Curtidas – Me notifique quando um usuário curtir a minha foto
+</span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+												<li><span class="pull-left"> Favoritos – Me notifique quando um usuário colocar o meu perfil como favorito.
+</span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+												<li><span class="pull-left">Solicitações de Perfil/Foto – Me notifique quando um usuário pedir mais informações sobre mim
+</span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+
 
 									  			<hr>
-									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+									  			<button type="button" class="btn btn-enviar">Confirmar </button>
+									  			<div class="alerta-notifica"></div>
+
+	                                      </form>
 
                                          </div>
                                           <!-- .end row-->
@@ -536,6 +561,38 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                                     </div>
 
                               <!-- .end modal editar Notificações-->
+                              <!-- modal editar Notificações Dicas -->
+                                <div class="modal fade" id="editar-dicas" tabindex="-1" role="dialog">
+                                  <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title pull-left" id="myModalLabel">Editar Notificações</h4>
+                                      </div>
+                                      <div class="modal-body">
+
+	                                      <form id="form-notifica">
+									  			<li><span class="pull-left">Pretendentes Diários – Me envie notificações quando os meus Pretendentes Diários estiverem disponíveis no site</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
+									  			<li><span class="pull-left">Dicas & Avisos – Me envie dicas para o sucesso e me notifique sobre o lançamento de novas funcionalidades</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
+									  			<li><span class="pull-left"> Ofertas do Site – Me envie ofertas e descontos que eu possa utilizar com uma assinatura.
+</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
+												<li><span class="pull-left"> Serviços de Relacionamento – Me envie ofertas de outros sites do Grupo que podem atender às minhas necessidades
+</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
+
+									  			<hr>
+									  			<button type="button" class="btn btn-enviar">Confirmar </button>
+									  			<div class="alerta-notifica"></div>
+
+	                                      </form>
+
+                                         </div>
+                                          <!-- .end row-->
+                                          </div>
+                                      </div>
+                                      <!-- .end -->
+                                    </div>
+
+                              <!-- .end modal editar Notificações Dicas-->
 
 
 
@@ -551,11 +608,9 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
       <div class="panel-body">
 
         <div class="col-lg-12 text-center">
-          <li><b class="pull-left">E-mail</b> <span class="pull-right"><a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
-		  <li><b class="pull-left">Mensagens de texto</b> <span class="pull-right"><a <a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a> </span></li>
-		  <li><b class="pull-left">Notificações do iPhone/iPad </b> <span class="pull-right"><a <a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
-		  <li><b class="pull-left">Notificações do Android </b> <span class="pull-right"><a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
-		  <li><b class="pull-left">Notificações do Chat  </b> <span class="pull-right"><a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
+          <li><b class="pull-left">Notificações de Usuários Interessados</b> <span class="pull-right"><a data-toggle="modal" data-target="#editar-notifica" href="#"><i>Editar</i></a></span></li>
+		  <li><b class="pull-left">Dicas, Eventos & Ofertas </b> <span class="pull-right"><a <a data-toggle="modal" data-target="#editar-dicas" href="#"><i>Editar</i></a> </span></li>
+
           <hr>
        </div>
 
@@ -570,7 +625,7 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
    <div class="panel panel-default">
 
 
-	      					<!-- modal login -->
+	      					<!-- modal login
                                 <div class="modal fade" id="filtro-online" tabindex="-1" role="dialog">
                                   <div class="modal-dialog  modal-lg" role="document">
                                     <div class="modal-content">
@@ -579,24 +634,27 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                                         <h4 class="modal-title pull-left" id="myModalLabel">Bloquear Usuário</h4>
                                       </div>
                                       <div class="modal-body">
-									  			<form>
+									  			<form  id="form-block-chat" method="post" role="form">
 										  			<div class="form-group">
 											  			<select class="form-control">
-												  			<option>Apelido 1</option>
+											  				<option>Apelido 1</option>
 												  			<option>Apelido 2</option>
 											  			</select>
 											  		</div>
+											  		<button type="button" class="btn btn-enviar">Confirmar </button>
+
 									  			</form>
 
 									  			<hr>
-									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+
+									  			<div class="alerta-chat"></div>
 
                                          </div>
-                                          <!-- .end row-->
+                                          <!-- .end row
                                           </div>
                                       </div>
-                                      <!-- .end -->
-                                    </div>
+                                      <!-- .end
+                                    </div>-->
 
                               <!-- .end login-->
                               <!-- modal login -->
@@ -608,18 +666,21 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                                         <h4 class="modal-title pull-left" id="myModalLabel">Ativar ou Desativar</h4>
                                       </div>
                                       <div class="modal-body">
-									  			<form>
+									  			<form  role="form">
 										  			<div class="form-group">
-											  			<select class="form-control">
-												  			<option>Ativar</option>
-												  			<option>Desativar</option>
-											  			</select>
+											  			<label class="radio-inline">
+											  				<input type="radio" name="ativa-chat" id="ativado"  value="Ativado"> Ativado
+											  			</label>
+											  			<label class="radio-inline">
+											  				<input type="radio" name="ativa-chat" id="desativado"  value="Desativado"> Desativado
+											  			</label>
 											  		</div>
+											  	   <button style="width: 100%;" type="button" id="botao-chat" class="btn btn-enviar">Confirmar </button>
+
 									  			</form>
 
 									  			<hr>
-									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
-
+									  			<div id="alerta" class="alert alert-success" style="margin-top: 20px;" role="alert"></div>
                                          </div>
                                           <!-- .end row-->
                                           </div>
@@ -641,35 +702,17 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
       <div class="panel-body">
 
         <div class="col-lg-12 text-center">
-          <li><b class="pull-left">Bloquear Usuário no Chat</b> <span class="pull-right"><a data-toggle="modal" data-target="#filtro-online" href="#"><i>Editar</i></a></span></li>
-           <li><b class="pull-left">Chat Ativado</b> <span class="pull-right">Ativado | <a data-toggle="modal" data-target="#ativa-funcao" href="#"><i>Editar</i></a></span></li>
+          <!--<li><b class="pull-left">Bloquear Usuário no Chat</b> <span class="pull-right"><a data-toggle="modal" data-target="#filtro-online" href="#"><i>Editar</i></a></span></li>-->
+           <li><b class="pull-left">Chat Ativado</b> <span class="pull-right"><a data-toggle="modal" data-target="#ativa-funcao" href="#"><i>Editar</i></a></span></li>
           <hr>
        </div>
-
-
-        <button type="submit" class="btn btn-confirmar">CONFIRMAR</button>
         </div>
     </div>
   </div>
 
 
 
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading5">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-          BUSCA
-        </a>
-      </h4>
-    </div>
-    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-      <div class="panel-body">
-	  		<p>Há a possibilidade de colocarmos para a pessoa deixar busca pré definidas salvas, e na hora que ela for buscar ela seleciona esse perfil que ela criou aqui?</p>
-        <hr>
-        <button type="submit" class="btn btn-confirmar">CONFIRMAR</button>
-        </div>
-    </div>
-  </div>
+
 
 
 
@@ -717,10 +760,16 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 										  			<div class="form-group">
 											  			<input type="text" class="form-control" placeholder="Novo apelido">
 										  			</div>
+										  			<div class="form-group">
+											  			<input type="password" class="form-control" placeholder="Alterar senha">
+										  			</div>
 									  			</form>
 
 									  			<hr>
-									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
+									  			<button id="atualiza" type="submit" class="btn btn-enviar">Confirmar </button>
+
+									  			<div class="alert alert-success" style="margin-top: 20px;" role="alert">Alteração realizada</div>
+
 
                                          </div>
                                           <!-- .end row-->
@@ -774,12 +823,12 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
       <div class="panel-body">
 
 	  		<div class="col-lg-12 text-center">
-	          <li><b class="pull-left">Idioma</b> <span class="pull-right">Português | <a data-toggle="modal" data-target="#info-idioma" href="#"><i>Editar</i></a></span></li>
+	          <!--<li><b class="pull-left">Idioma</b> <span class="pull-right">Português | <a data-toggle="modal" data-target="#info-idioma" href="#"><i>Editar</i></a></span></li>-->
 			  <li><b class="pull-left">Informações de login </b> <span class="pull-right"><a data-toggle="modal" data-target="#info-login" href="#"><i>Editar</i></a> </span></li>
-			  <li><b class="pull-left">Minhas Fotos </b> <span class="pull-right"> <a data-toggle="modal" data-target="#editar-foto" href="#"><i>Editar</i></a></span></li>
+			 <!-- <li><b class="pull-left">Minhas Fotos </b> <span class="pull-right"> <a data-toggle="modal" data-target="#editar-foto" href="#"><i>Editar</i></a></span></li>-->
 			  <li><b class="pull-left">Perfil de interesse</b> <span class="pull-right"><a href="perfil-interesse-1.html"><i>Editar</i></a></span></li>
-			  <li><b class="pull-left">Minha Localização  </b> <span class="pull-right"><a <a data-toggle="modal" data-target="#minha-localizacao" href="#"><i>Editar</i></a></span></li>
-			  <li><b class="pull-left">Meu Perfil </b> <span class="pull-right"><a href="editar-perfil.html"><i>Editar</i></a></span></li>
+			  <!--<li><b class="pull-left">Minha Localização  </b> <span class="pull-right"><a <a data-toggle="modal" data-target="#minha-localizacao" href="#"><i>Editar</i></a></span></li>-->
+			  <li><b class="pull-left">Editar Perfil </b> <span class="pull-right"><a href="editar-perfil.html"><i>Editar</i></a></span></li>
           <hr>
        </div>
 
@@ -788,65 +837,8 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
   </div>
 
 
-
-
-
-
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading7">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
-          FAQ
-        </a>
-      </h4>
-    </div>
-    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-
-      <div class="panel-body" id="faq">
-
-
-                  <!--tabs-->
-
-                    <!-- Nav tabs -->
-                    <div class="col-lg-6">
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#1"  role="tab" data-toggle="tab">1</a></li>
-                        <li role="presentation"><a href="#2" role="tab" data-toggle="tab">2</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-lg-6">
-
-
-                    <!-- Tab panes -->
-                      <div class="tab-content">
-
-                      <!--item tab-->
-                        <div role="tabpanel" class="tab-pane active" id="1">
-							Seção 1
-                        </div>
-                        <!--item .end tab-->
-                        <!-- item tab-->
-                        <div role="tabpanel" class="tab-pane" id="2">
-                          Seção 2
-                        </div>
-                        <!-- item .end tab-->
-                      </div>
-                    </div>
-                  <!--tabs .end-->
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-
 </div>
 <!--.end accords -->
-
-
 
 
                 </div>
@@ -855,30 +847,6 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -978,72 +946,11 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 </div>
 </section>
 <!-- footer.end -->
-<!-- chat -->
-<section id="chat">
-    <div class="col-lg-2 col-md-2 col-sm-2  pull-right ">
-        <div class="row">
-            <!-- configura chat -->
-            <div class="configura-chat">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Opcões</a>
-                <div id="options-chat-content" class="hidden">
-                    <li><a href="#">Item1</a>
-                    </li>
-                </div>
-                    <!--
-                    <div id="options-chat-title" class="hidden">
-                        <b>Example popover #2</b> - title
-                    </div>
-                -->
-                <i class="fa fa-sliders" aria-hidden="true"></i>
-                <a href="#">Filtros</a>
-            </div>
-            <!-- .end configura chat -->
-            <div class="perfis-chat">
-                <!--item-->
-                <div class="col-lg-12">
-                    <div class="col-lg-5">
-                        <a id="perfil-chat" href="#"><img src="assets/images/thumb_chat.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7">
-                        <li>
-                            <h6>brunasolteira421</h6>
-                        </li>
-                        <li><span>24 | Sao Paulo</span>
-                        </li>
-                    </div>
-                </div>
-                <!--.end item -->
-            </div>
-        </div>
-    </div>
-    <!-- vendo perfil -->
-    <div id="perfil-chat-content" class="col-lg-4">
-        <div class="col-lg-12 chat-design">
-            <div class="col-lg-4"><img src="assets/images/thumb_chat.png">
-            </div>
-            <div class="col-lg-8">
-                <li>
-                    <h3>brunasolteira421</h3>
-                </li>
-                <li><span>24 | Sao Paulo</span>
-                </li>
-            </div>
-            <div class="col-lg-12">
-                <p>Descrição do perfil a decidir Exemplo: Físico, idade, filhos, etnia</p>
-                <hr>
-                <a href="#" class="btn">CONVERSAR AGORA</a>
-            </div>
-        </div>
-    </div>
-    <!--.end vendo perfil-->
-</section>
-<!-- .end chat -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <!-- Custom Scripts -->
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/app.js"></script>

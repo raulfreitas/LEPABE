@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- header -->
+ <!-- header -->
     <header>
         <div class="container">
             <div class="row">
@@ -27,7 +27,7 @@
 
                     <!-- logo -->
                     <div class="col-lg-2 col-sm-2 col-md-12">
-                        <a href="#">
+                        <a href="meu-perfil.html">
                             <img class="logo img-responsive" src="assets/images/logo.png">
                         </a>
                     </div>
@@ -73,7 +73,7 @@
             <li class="hidden-xs"><i class="glyphicon glyphicon-comment" aria-hidden="true"></i>
                 <a id="chat-open" href="#">CHAT ONLINE</a>
             </li>
-           <li class="configuracoes"><a href="meu-perfil.html"><img src="assets/images/thumb_perfil.png"></a> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Alohaboy06 <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <li class="configuracoes"><a href="meu-perfil.html"><img src="assets/images/thumb_perfil.png"></a> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Alohaboy06 <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu" aria-labelledby="dLabel">
                     <!--item-->
                     <li>
@@ -102,25 +102,19 @@
 </div>
 </header>
 <!-- .end header -->
+
     <!-- chat -->
     <section id="chat">
         <div class="col-lg-2 col-md-2 col-sm-2  pull-right ">
             <div class="row">
                 <!-- configura chat -->
                 <div class="configura-chat">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Opcões</a>
-                    <div id="options-chat-content" class="hidden">
-                        <li><a href="#">Item1</a>
-                        </li>
-                    </div>
-                        <!--
-                    <div id="options-chat-title" class="hidden">
-                        <b>Example popover #2</b> - title
-                    </div>
-                -->
-                <i class="fa fa-sliders" aria-hidden="true"></i>
-                <a href="#">Filtros</a>
+	                <i class="fa fa-sliders" aria-hidden="true"></i>
+                    <a id="options-chat" data-placement="left" tabindex="0" role="button" data-trigger="focus">Filtros</a>
+                <div id="options-chat-content" class="hidden">
+                    <li><a href="#">Somente Online</a>
+                    </li>
+                </div>
             </div>
             <!-- .end configura chat -->
             <div class="perfis-chat">
@@ -285,14 +279,25 @@
                                             <!-- tab enviadas -->
                                             <div role="tabpanel" class="tab-pane fade" id="fotos-secretas">
                                                    <div class="row">
-                                                    <!-- item -->
+
+
+
+                                                      <!-- item -->
                                                     <div class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                         <div class="box-fotos text-center">
                                                             <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                            <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
                                                             <hr>
-                                                            <a href="#" class="btn btn-white">Curtir</a>
-                                                            <a href="#" class="btn btn-white">Comentar</a>
+                                                            <a href="#" class="btn btn-white">Curtidas (4)</a>
                                                         </div>
                                                     </div>
                                                     <!-- .end item -->
@@ -316,13 +321,51 @@
                                   </div>
                                 </div>
                               <!-- .end modal  meu album -->
+                              <!-- modal notifica favoritos -->
+                                <div class="modal fade" id="notifica-favorito" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                                      </div>
+                                      <div class="modal-body">
+
+									  	 <h4 class="modal-title text-center" id="myModalLabel">Favoritado com sucesso!</h4>
+
+									  	 <a href="favoritos.html" class="btn btn-enviar">Ir para meus favoritos</a>
+
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              <!-- .end modal notifica favorito -->
+                              <!-- modal notifica piscada -->
+                                <div class="modal fade" id="notifica-acao-psicada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                                      </div>
+                                      <div class="modal-body">
+
+									  	 <h4 class="modal-title text-center" id="myModalLabel">Piscadinha enviada com sucesso!</h4>
+									  	 <a href="piscadinha.html" class="btn btn-enviar">Ir para minhas piscadinhas</a>
+
+
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              <!-- .end modal notifica piscada -->
 
         <div class="row">
 
-           <!-- menu lateral -->
+         <!-- menu lateral -->
             <div class="col-lg-3">
                 <div class="perfil">
-                    <img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail">
+                    <a href="meu-perfil.html"><img src="assets/images/thumb_perfil_principal.png" class="img-thumbnail"></a>
                    <a data-toggle="modal" data-target="#editar-foto" href="#"> <button class="btn editar-foto">Editar Foto</button> </a>
                     <hr>
                     <ul>
@@ -335,7 +378,14 @@
                     <ul>
                         <li><a href="mensagens.html">Mensagens</a></li>
                         <li><a id="chat-open-menu" href="#">Chat</a></li>
-                        <li><a href="piscadinha-viuperfil-presentes-prediletos-curtidas.html">Favoritos</a></li>
+                        <li><a href="pretendentes-do-dia.html">Pretendentes do dia</a></li>
+                        <li><a href="busca.html">Busca</a></li>
+                        <li><a href="piscadinha.html">Piscadinhas</a></li>
+                        <li><a href="viu-perfil.html">Viu Perfil</a></li>
+                        <!--<li><a href="presentes.html">Presentes</a></li>-->
+                        <li><a href="curtidas.html">Curtidas</a></li>
+                        <li><a href="favoritos.html">Favoritos</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -355,7 +405,7 @@
                         <div class="box-pretendentes">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <img src="assets/images/thumb_pretendentes.png" class="img-responsive">
+                                    <a href="perfil-membro.html"><img src="assets/images/thumb_pretendentes.png" class="img-responsive"></a>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 30px;">
 	                                    <div class="row">
@@ -402,13 +452,13 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="area-interacao text-center">
                                                 <ul class="list-inline">
-                                                    <li><a href="#"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye fa-4x" aria-hidden="true"></i>
+                                                    <li><a data-toggle="modal"  href="#notifica-acao-psicada"  data-toggle="tooltip" data-placement="bottom" title="Piscadinha"><i class="fa fa-eye fa-4x" aria-hidden="true"></i>
                                                     </a></li>
-                                                    <li><a href="#"  data-toggle="tooltip" data-placement="bottom" title="Curtir"><i class="fa fa-thumbs-up fa-4x" aria-hidden="true"></i>
+                                                    <li><a href="#"  data-toggle="tooltip" id="curtiu-perfil" data-placement="bottom" title="Curtir"><i class="fa fa-thumbs-up fa-4x" aria-hidden="true"></i>
                                                     </a></li>
-                                                    <li><a href="#"  data-toggle="tooltip" data-placement="bottom" title="Não Curtir"><i class="fa fa-thumbs-down fa-4x" aria-hidden="true"></i>
+                                                    <li><a href="#"  data-toggle="tooltip" id="nao-curtiu-perfil" data-placement="bottom" title="Não Curtir"><i class="fa fa-thumbs-down fa-4x" aria-hidden="true"></i>
                                                     </a></li>
-                                                    <li><a href="#"  data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star fa-4x" aria-hidden="true"></i>
+                                                    <li><a data-toggle="modal"  href="#notifica-favorito"  data-toggle="tooltip" data-placement="bottom" title="Favoritar"><i class="fa fa-star fa-4x" aria-hidden="true"></i>
                                                    </a></li>
                                                 </ul>
                                             </div>
@@ -454,8 +504,11 @@
 					                               <textarea rows="10" class="form-control"></textarea>
 					                             </div>
 					                             <div class="form-group">
-					                              <button type="submit" class="btn btn-enviar"><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>
+					                           <button id="enviando-mensagem" type="button" class="btn btn-enviar"><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>
 					 Enviar</button>
+
+					 							<div class="alert alert-success" style="margin-top: 20px;" role="alert">Mensagem enviada com sucesso!</div>
+
 					                             </div>
 					                          </form>
 					                          <!-- .end text area -->

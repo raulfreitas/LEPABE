@@ -56,3 +56,109 @@ $(function () {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+// Mensagem enviada
+
+$("#enviando-mensagem").click(function(){
+	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+
+$("#atualiza").click(function(){
+	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+
+$("#denunciar-perfil").click(function(){
+	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+$("#comenta-foto").click(function(){
+	$(".alert-success").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+
+// Block notifica
+
+$(function(){
+    $('#notifica-bloqueado').on('show.bs.modal', function(){
+        var myModal = $(this);
+        clearTimeout(myModal.data('hideInterval'));
+        myModal.data('hideInterval', setTimeout(function(){
+            myModal.modal('hide');
+        }, 2000));
+    });
+});
+$(function(){
+    $('#curti-foto').on('show.bs.modal', function(){
+        var myModal = $(this);
+        clearTimeout(myModal.data('hideInterval'));
+        myModal.data('hideInterval', setTimeout(function(){
+            myModal.modal('hide');
+        }, 2000));
+    });
+});
+
+// Notifica Block Configuração
+
+$('button').on('click', function() {
+  var checked = $('#form-block').find('option:selected').length;
+  if (!checked)
+    $(".alerta").html("<div class='alert alert-danger' style='margin-top: 20px; display: block;' role='alert'>Nenhum Membro na lista</div>").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+
+  else
+    $(".alerta").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Membro desbloqueado com sucesso!</div>").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+
+$('button').on('click', function() {
+  var checked = $('#form-block-chat').find('option:selected').length;
+  if (!checked)
+    $(".alerta-chat").html("<div class='alert alert-danger' style='margin-top: 20px; display: block;' role='alert'>Nenhum Membro na lista</div>").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+
+  else
+    $(".alerta-chat").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Membro desbloqueado com sucesso!</div>").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+
+
+$('button').on('click', function() {
+  var checked = $('#form-notifica').find(':checked').length;
+  if (!checked)
+    $(".alerta-notifica").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Alterações Realizadas</div>").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+  else
+    $(".alerta-notifica").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Alterações Realizadas</div>").fadeIn("slow").slideUp(1000, function(){
+    	$(".alert-success").slideUp(4000);
+	});
+});
+
+
+$('#botao-chat').on('click', function() {
+	$( "#alerta" ).html( $( "input:checked" ).val() + " Chat" ).fadeIn("slow").slideUp(1000);
+});
+
+
+$("#curtiu-perfil").click(function(){
+	$(this).css("color","#07de07");
+	$("#nao-curtiu-perfil").css("color","#383838");
+});
+$("#nao-curtiu-perfil").click(function(){
+	$(this).css("color","red");
+	$("#curtiu-perfil").css("color","#383838");
+});
+
+
+
+
