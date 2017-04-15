@@ -220,8 +220,8 @@
                                             <div role="tabpanel" class="tab-pane fade in active" id="fotos">
                                                 <div class="row">
                                                     <!-- item -->
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <div  class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button id="close-foto"  onclick='$(this).parent().remove();' type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                         <div class="box-fotos text-center">
                                                             <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
                                                             <ul class="list-unstyled">
@@ -238,29 +238,9 @@
                                                         </div>
                                                     </div>
                                                     <!-- .end item -->
-                                                    <!-- item -->
+                                                      <!-- item -->
                                                     <div class="col-lg-4 col-md-4 col-sm-4">
-                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        <div class="box-fotos text-center">
-                                                            <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
-
-                                                             <ul class="list-unstyled">
-                                                                <li><h5>Comentário do membro x</h5>
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
-                                                                </li>
-                                                                <li class="divider"></li>
-                                                                <li><h5>Comentário do membro x</h5>
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
-                                                                </li>
-                                                            </ul>
-                                                            <hr>
-                                                            <a href="#" class="btn btn-white">Curtidas (15)</a>
-                                                        </div>
-                                                    </div>
-                                                    <!-- .end item -->
-                                                    <!-- item -->
-                                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                     <button id="close-foto"  onclick='$(this).parent().remove();' type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                         <div class="box-fotos text-center">
                                                             <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
                                                             <ul class="list-unstyled">
@@ -273,7 +253,26 @@
                                                                 </li>
                                                             </ul>
                                                             <hr>
-                                                            <a href="#" class="btn btn-white">Curtidas (4)</a>
+                                                            <a href="#" class="btn btn-white">Curtidas (10)</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- .end item -->
+                                                      <!-- item -->
+                                                    <div  class="col-lg-4 col-md-4 col-sm-4">
+                                                     <button id="close-foto"  onclick='$(this).parent().remove();' type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <div class="box-fotos text-center">
+                                                            <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
+                                                            <ul class="list-unstyled">
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><h5>Comentário do membro x</h5>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec feugiat libero.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <hr>
+                                                            <a href="#" class="btn btn-white">Curtidas (10)</a>
                                                         </div>
                                                     </div>
                                                     <!-- .end item -->
@@ -287,7 +286,7 @@
                                                    <div class="row">
                                                      <!-- item -->
                                                     <div class="col-lg-4 col-md-4 col-sm-4">
-                                                     <button type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                     <button onclick='$(this).parent().remove();' type="button" class="close foto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                         <div class="box-fotos text-center">
                                                             <img src="assets/images/thumb_galeriafotos.png"  class="img-thumbnail">
                                                             <ul class="list-unstyled">
@@ -395,7 +394,7 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 		 	<option>Membro 01</option>
 		</select>
 
-		<button type="button" class="btn btn-confirmar">Confirmar </button>
+		<button id="block-button" type="button" class="btn btn-confirmar">Confirmar </button>
 
     	</form>
 
@@ -475,11 +474,10 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 									                </div>
 									              </div>
 
-									              <div class="form-group">
-									                <div class="col-lg-12">
-										                <button type="submit" class="btn btn-enviar">Alterar</button>
-									                  </div>
-									              </div>
+									              <button id="atualiza" type="button" class="btn btn-enviar">Atualizar</button>
+
+									  			<div class="alert alert-success" style="margin-top: 20px;" role="alert">Alteração realizada</div>
+
 
 									            </form>
 	                                       </div>
@@ -537,19 +535,20 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                                       <div class="modal-body">
 
 	                                      <form id="form-notifica">
-									  			<li><span class="pull-left">Gostar do Perfil – Me notifique quando um usuário estiver interessado e gostar do meu perfil </span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
-									  			<li><span class="pull-left">Interesse – Me notifique quando um usuário mostrar interesse em mim a partir dos seus Pretendentes Diários. </span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+									  			<li><span class="pull-left">Gostar do Perfil – Me notifique quando um usuário estiver interessado e gostar do meu perfil </span> <span class="pull-right"><label><input type="checkbox" name="notificacoes" value=""></label></span></li>
+									  			<li><span class="pull-left">Interesse – Me notifique quando um usuário mostrar interesse em mim a partir dos seus Pretendentes Diários. </span> <span class="pull-right"><label><input type="checkbox" name="notificacoes" value=""></label></span></li>
 									  			<li><span class="pull-left"> Fotos Curtidas – Me notifique quando um usuário curtir a minha foto
-</span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+</span> <span class="pull-right"><label><input type="checkbox" name="notificacoes" value=""></label></span></li>
 												<li><span class="pull-left"> Favoritos – Me notifique quando um usuário colocar o meu perfil como favorito.
-</span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+</span> <span class="pull-right"><label><input type="checkbox" name="notificacoes" value=""></label></span></li>
 												<li><span class="pull-left">Solicitações de Perfil/Foto – Me notifique quando um usuário pedir mais informações sobre mim
-</span> <span class="pull-right"><label><input type="radio" name="notificacoes" value=""></label></span></li>
+</span> <span class="pull-right"><label><input type="checkbox" name="notificacoes" value=""></label></span></li>
 
 
 									  			<hr>
-									  			<button type="button" class="btn btn-enviar">Confirmar </button>
-									  			<div class="alerta-notifica"></div>
+									  			<button id="notificacoes-1" type="button" class="btn btn-enviar">Confirmar </button>
+									  			<div id="alerta-1" class="alert alert-success" style="margin-top: 20px;" role="alert"></div>
+
 
 	                                      </form>
 
@@ -572,16 +571,17 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                                       <div class="modal-body">
 
 	                                      <form id="form-notifica">
-									  			<li><span class="pull-left">Pretendentes Diários – Me envie notificações quando os meus Pretendentes Diários estiverem disponíveis no site</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
-									  			<li><span class="pull-left">Dicas & Avisos – Me envie dicas para o sucesso e me notifique sobre o lançamento de novas funcionalidades</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
+									  			<li><span class="pull-left">Pretendentes Diários – Me envie notificações quando os meus Pretendentes Diários estiverem disponíveis no site</span> <span class="pull-right"><label><input name="dicas-eventos" type="checkbox" value=""></label></span></li>
+									  			<li><span class="pull-left">Dicas & Avisos – Me envie dicas para o sucesso e me notifique sobre o lançamento de novas funcionalidades</span> <span class="pull-right"><label><input name="dicas-eventos" type="checkbox" value=""></label></span></li>
 									  			<li><span class="pull-left"> Ofertas do Site – Me envie ofertas e descontos que eu possa utilizar com uma assinatura.
-</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
+</span> <span class="pull-right"><label><input name="dicas-eventos" type="checkbox" value=""></label></span></li>
 												<li><span class="pull-left"> Serviços de Relacionamento – Me envie ofertas de outros sites do Grupo que podem atender às minhas necessidades
-</span> <span class="pull-right"><label><input name="dicas-eventos" type="radio" value=""></label></span></li>
+</span> <span class="pull-right"><label><input name="dicas-eventos" type="checkbox" value=""></label></span></li>
 
 									  			<hr>
-									  			<button type="button" class="btn btn-enviar">Confirmar </button>
-									  			<div class="alerta-notifica"></div>
+									  			<button id="notificacoes-2" type="button" class="btn btn-enviar">Confirmar </button>
+									  			<div id="alerta-2" class="alert alert-success" style="margin-top: 20px;" role="alert"></div>
+
 
 	                                      </form>
 

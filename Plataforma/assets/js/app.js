@@ -4,6 +4,7 @@ $('.dropdown-toggle').dropdown()
 // WOW js
 new WOW().init();
 
+
 // Acessa Chat
 
 $(document).ready(function () {
@@ -105,7 +106,7 @@ $(function(){
 
 // Notifica Block Configuração
 
-$('button').on('click', function() {
+$('#block-button').on('click', function() {
   var checked = $('#form-block').find('option:selected').length;
   if (!checked)
     $(".alerta").html("<div class='alert alert-danger' style='margin-top: 20px; display: block;' role='alert'>Nenhum Membro na lista</div>").fadeIn("slow").slideUp(1000, function(){
@@ -132,21 +133,26 @@ $('button').on('click', function() {
 });
 
 
-$('button').on('click', function() {
-  var checked = $('#form-notifica').find(':checked').length;
-  if (!checked)
-    $(".alerta-notifica").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Alterações Realizadas</div>").fadeIn("slow").slideUp(1000, function(){
-    	$(".alert-success").slideUp(4000);
-	});
-  else
-    $(".alerta-notifica").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Alterações Realizadas</div>").fadeIn("slow").slideUp(1000, function(){
-    	$(".alert-success").slideUp(4000);
-	});
+//$('#notifica-button').on('click', function() {
+  //var checked = $('#form-notifica').find(':checked').length;
+  //if (!checked)
+   // $(".alerta-notifica").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Alterações Realizadas</div>").fadeIn("slow").slideUp(1000, function(){
+   // 	$(".alert-success").slideUp(4000);
+	//});
+  //else
+   // $(".alerta-notifica").html("<div class='alert alert-success' style='margin-top: 20px; display: block;' role='alert'>Alterações Realizadas</div>").fadeIn("slow").slideUp(1000, function(){
+   // 	$(".alert-success").slideUp(4000);
+//	});
+//});
+$('#notificacoes-1').on('click', function() {
+	$( "#alerta-1" ).html( $( "input[name='notificacoes']:checked" ).val() + " <b>Alterações Realizadas</b>" ).fadeIn("slow").slideUp(1000);
+});
+$('#notificacoes-2').on('click', function() {
+	$( "#alerta-2" ).html( $( "input[name='dicas-eventos']:checked" ).val() + " <b>Alterações Realizadas</b>" ).fadeIn("slow").slideUp(1000);
 });
 
-
 $('#botao-chat').on('click', function() {
-	$( "#alerta" ).html( $( "input:checked" ).val() + " Chat" ).fadeIn("slow").slideUp(1000);
+	$( "#alerta" ).html( $( "input[name='ativa-chat']:checked" ).val() + " Chat" ).fadeIn("slow").slideUp(1000);
 });
 
 
