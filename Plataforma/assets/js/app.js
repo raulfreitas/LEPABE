@@ -12,7 +12,7 @@ $('#atualiza-login-form').validator();
 
 $('#atualiza-login-form').validator().on('submit', function (e) {
   if (e.isDefaultPrevented()) {
-     alert("Altere os dados");
+     $("#alerta-login").show().html("Preencha todos os dados");
   } else {
   	 alert("Dados Modificados");
   }
@@ -21,7 +21,7 @@ $('#atualiza-login-form').validator().on('submit', function (e) {
 
 $('#atualiza-cartao-form').validator().on('submit', function (e) {
   if (e.isDefaultPrevented()) {
-     alert("Altere os dados");
+     $("#alerta-cartao").show().html("Preencha todos os dados");
   } else {
   	 alert("Dados Modificados");
   }

@@ -476,10 +476,11 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 
 									              <button id="atualizar-cartao" type="submit" class="btn btn-enviar">Atualizar</button>
 
-												  <div class="alert alert-success" style="margin-top: 20px;" role="alert">Alteração realizada</div>
+												  <div id="alerta-cartao" class="alert alert-danger" style="display:none; margin-top: 20px;" role="alert">Alteração realizada</div>
 
 
 									            </form>
+
 
 
 
@@ -497,6 +498,17 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
                               <!-- .end Dados Pagamento-->
 
 
+							  <!-- modal bloquear -->
+                                <div class="modal fade" id="notifica-bloqueado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-body text-center">
+									  	<h4 class="modal-title" id="myModalLabel">Bloqueado com sucesso!</h4>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              <!-- .end modal bloquear -->
 
 
 
@@ -723,34 +735,6 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
   <div class="panel panel-default">
 
 
-
-	  						<!-- modal Localização -->
-                                <div class="modal fade" id="minha-localizacao" tabindex="-1" role="dialog">
-                                  <div class="modal-dialog  modal-lg" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title pull-left" id="myModalLabel">Minha Localização</h4>
-                                      </div>
-                                      <div class="modal-body">
-									  			<form>
-										  			<div class="form-group">
-											  			<input type="text" class="form-control" placeholder="Insira sua localização">
-										  			</div>
-									  			</form>
-
-									  			<hr>
-									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
-
-                                         </div>
-                                          <!-- .end row-->
-                                          </div>
-                                      </div>
-                                      <!-- .end -->
-                                    </div>
-
-                              <!-- .end modalLocalização-->
-
                               	<!-- modal login -->
                                 <div class="modal fade" id="info-login" tabindex="-1" role="dialog">
                                   <div class="modal-dialog  modal-lg" role="document">
@@ -769,7 +753,7 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 										  			</div>
 										  			<button id="atualiza-login" type="submit" class="btn btn-enviar">Confirmar </button>
 
-										  			<div id="alerta-dev" class="alert alert-success" style="margin-top: 20px;" role="alert"></div>
+										  			<div id="alerta-login" class="alert alert-danger" style="margin-top: 20px;" role="alert"></div>
 
 
 
@@ -778,35 +762,6 @@ Desbloqueie usuários e permita que eles entrem em contato via e-mail, chat ou q
 									  			<hr>
 
 
-
-                                         </div>
-                                          <!-- .end row-->
-                                          </div>
-                                      </div>
-                                      <!-- .end -->
-                                    </div>
-
-                              <!-- .end login-->
-                               	<!-- modal login -->
-                                <div class="modal fade" id="info-idioma" tabindex="-1" role="dialog">
-                                  <div class="modal-dialog  modal-lg" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title pull-left" id="myModalLabel">Alterar Idioma</h4>
-                                      </div>
-                                      <div class="modal-body">
-									  			<form>
-										  			<div class="form-group">
-											  			<select class="form-control">
-												  			<option>Português</option>
-												  			<option>Inglês</option>
-											  			</select>
-											  		</div>
-									  			</form>
-
-									  			<hr>
-									  			<button type="submit" class="btn btn-enviar">Confirmar </button>
 
                                          </div>
                                           <!-- .end row-->
