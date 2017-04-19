@@ -49,6 +49,7 @@ Notifica
 }
 
 
+
     /********
 ****
 *
@@ -121,6 +122,8 @@ Header
         font-size: 17px;
     }
 
+
+
     .notifica a:hover {
         color: darkgray;
     }
@@ -129,8 +132,8 @@ Header
         color: black;
     }
 
-    .notifica i:after {
-        content: "5";
+    .notifica i[data-bubble]:after {
+        content:attr(data-bubble);
         background: red;
         width: 20px;
         height: 20px;
@@ -211,8 +214,10 @@ Header
         border: none;
     }
 
-    .fn-direito .fa-heart:after {
-        content: "11";
+
+
+    .fn-direito .fa-heart[data-bubble]:after {
+        content:attr(data-bubble);
         background: red;
         width: 20px;
         height: 20px;
@@ -905,8 +910,11 @@ Editar Perfil
     color: #525252;
     padding: 5px;
 }
-.menu-lateral li a:after {
-     content: "11";
+
+
+
+.menu-lateral li a[data-bubble]:after {
+     	content:attr(data-bubble);
         background: red;
         width: 10px;
         height: 10px;
