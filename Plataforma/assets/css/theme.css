@@ -1085,6 +1085,16 @@ Mensagens
     margin-bottom: 20px;
     padding: 20px;
 }
+.item-mensagens i {
+	font-size: 12px;
+}
+.item-mensagens-chat {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 20px;
+}
+.item-mensagens-chat i {
+	font-size: 12px;
+}
 .box-mensagens .active {
 	background: #e9e9e9;
 }
@@ -1095,7 +1105,9 @@ Mensagens
 #mensagens input[type="checkbox"] {
 	margin-right: 5px;
 }
-
+.pink-color {
+	color: #E93C82;
+}
 .sidebar-mensagens h4 {
     color: #5d5d5d;
     font-weight: 700;
