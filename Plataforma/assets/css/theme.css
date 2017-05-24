@@ -987,17 +987,20 @@ Planos
  .planos .button-aumente {
         background: #e93c82;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 14px;
         color: white;
-        padding: 12px;
+        padding: 15px;
         font-weight: 300;
-        margin-left: 10px;
-        margin-bottom: 30px;
-        margin-top: 30px;
         display: flex;
         justify-content: center;
-        margin-right: 10px;
         line-height: 25px;
+        margin: 0 auto;
+}
+.planos {
+	padding-bottom: 20px;
+}
+.price .checkbox input[type="radio"] {
+	margin-top: 11px;
 }
 
   /****
