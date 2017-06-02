@@ -8,8 +8,29 @@ $(document).ready(function(){
 	});
 });
 
-// POPULANDO CIDADE + ESTADO
 
+// POPULA BRASIL
+
+$(document).ready(function(){
+    $("#pais").change(function(){
+        $(this).find("option:selected").each(function(){
+            if($(this).attr("value")=="Brasil"){
+                $("#cidade_brasil").removeClass("hide");
+                $("#estado_brasil").removeClass("hide");
+                $("#pais_modifica").addClass("col-lg-5");
+                $("#cidade_mundo").addClass("hide");
+            }
+            else if($(this).attr("value")!="Brasil"){
+	           $("#cidade_brasil").addClass("hide");
+	           $("#estado_brasil").addClass("hide");
+	           $("#pais_modifica").removeClass("col-lg-5");
+	           $("#pais_modifica").addClass("col-lg-12");
+	           $("#cidade_mundo").removeClass("hide");
+
+            }
+        });
+    })
+});
  $(document).ready(function () {
 
 			$.getJSON('estados_cidades.json', function (data) {
@@ -18,14 +39,14 @@ $(document).ready(function(){
 				$.each(data, function (key, val) {
 					options += '<option value="' + val.nome + '">' + val.nome + '</option>';
 				});
-				$("#estados").html(options);
+				$("#estados_brasil").html(options);
 
-				$("#estados").change(function () {
+				$("#estados_brasil").change(function () {
 
 					var options_cidades = '';
 					var str = "";
 
-					$("#estados option:selected").each(function () {
+					$("#estados_brasil option:selected").each(function () {
 						str += $(this).text();
 					});
 
@@ -36,10 +57,16 @@ $(document).ready(function(){
 							});
 						}
 					});
-					$("#cidades").html(options_cidades);
+					$("#cidades_brasil").html(options_cidades);
 
 				}).change();
 
 			});
 
 		});
+
+
+
+
+
+
